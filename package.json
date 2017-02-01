@@ -1,0 +1,22 @@
+{
+  "name": "3dstates",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Isaacxpreston/3Dstates.git"
+  },
+  "author": "Isaac",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Isaacxpreston/3Dstates/issues"
+  },
+  "homepage": "https://github.com/Isaacxpreston/3Dstates#readme",
+  "dependencies": {
+    "three": "^0.84.0"
+  }
+}
