@@ -4,17 +4,18 @@ const path = require('path')
 // const morgan = require('morgan')
 const webpack = require('webpack');
 
-const config = require('./webpack.config.js');
+//const config = require('./webpack.config.js');
 // const dummy = require('./routes/dummy_router.js');
 
 // APP SETUP & MIDDLEWARE
 const app = express();
-const compiler = webpack(config);
-app.use(require('webpack-dev-middleware')(compiler, {
-  noInfo: true,
-  publicPath: config.output.publicPath
-}));
-app.use(require('webpack-hot-middleware')(compiler));
+app.use(express.static(__dirname));
+// const compiler = webpack(config);
+// app.use(require('webpack-dev-middleware')(compiler, {
+//   noInfo: true,
+//   publicPath: config.output.publicPath
+// }));
+// app.use(require('webpack-hot-middleware')(compiler));
 
 app.get('/', (req, res) => (
   res.sendFile(path.resolve(__dirname, /*'../client/app',*/ 'index.html'))

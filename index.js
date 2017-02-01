@@ -1,4 +1,11 @@
-      var THREE = require("./node_modules/three/build/three.js")
+      // const texas = require("./texas.json")
+      // const THREE = require('three');
+      //import * as THREE from 'three'
+      //import * as OBJLoader from 'three-obj-loader'
+      // const OBJLoader = require('three-obj-loader');
+      // OBJLoader(THREE);
+       //const texasObj = require("./texas.obj")
+      // console.log("here", texas, texasObj)
 			var scene = new THREE.Scene();
 			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
 
@@ -12,15 +19,21 @@
       // load a resource
       loader.load(
         // resource URL
-        'models/texas.json',
+        './texas.json',
         // Function when resource is loaded
         function ( geometry, materials ) {
-          //var material = new THREE.MultiMaterial( materials );
+          var material = new THREE.MultiMaterial( materials );
           var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
           var object = new THREE.Mesh( geometry, material );
           scene.add( object );
+          console.log("here?")
         }
       );
+
+//       var loader = new THREE.OBJLoader();
+// loader.load( 'texas.obj', function ( object ) {
+//   scene.add( object );
+// } );
 
 			var geometry = new THREE.BoxGeometry( 1, 1, 1 );
 			var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );

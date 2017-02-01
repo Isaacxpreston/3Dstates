@@ -2,7 +2,7 @@ var webpack = require('webpack');
 var path = require('path');
 
 var BUILD_DIR = path.resolve(__dirname, 'public');
-var APP_DIR = path.resolve(__dirname);
+var APP_DIR = path.resolve(__dirname); //fixme later
 
 var config = {
   devtool: 'source-map',
@@ -23,7 +23,6 @@ var config = {
     loaders : [
       {
         test: /\.scss$/,
-        //include: path.join(__dirname, 'client/app'),
         loaders: [ 'style-loader', 'css-loader' ]
       },
       {
@@ -45,6 +44,10 @@ var config = {
         include : path.join(__dirname, 'client/app'),
         loader : 'babel-loader'
       },
+      {
+        test: /\.json$/,
+        loader: "json-loader"
+      }
     ]
   },
   node: {
