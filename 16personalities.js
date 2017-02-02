@@ -8,12 +8,12 @@ const states = {
       T: 1.13
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.76,
+      T: 2.2
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 1.19,
+      T: 0.79
     },
     ENTP: {
       A: null,
@@ -75,12 +75,12 @@ const states = {
       T: 1.22
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.55,
+      T: 1.97
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 0.98,
+      T: 0.65
     },
     ENTP: {
       A: null,
@@ -142,12 +142,12 @@ const states = {
       T: 1.07
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.52,
+      T: 2.09
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 0.96,
+      T: 0.69
     },
     ENTP: {
       A: null,
@@ -209,12 +209,12 @@ const states = {
       T: 1.1
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.49,
+      T: 2.07
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 0.86,
+      T: 0.65
     },
     ENTP: {
       A: null,
@@ -276,12 +276,12 @@ const states = {
       T: 1.13
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.59,
+      T: 2.06
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 0.97,
+      T: 0.58
     },
     ENTP: {
       A: null,
@@ -343,12 +343,12 @@ const states = {
       T: 0.88
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.79,
+      T: 1.95
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 0.87,
+      T: 0.44
     },
     ENTP: {
       A: null,
@@ -410,12 +410,12 @@ const states = {
       T: 1.2
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.87,
+      T: 2.22
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 1.07,
+      T: 0.73
     },
     ENTP: {
       A: null,
@@ -477,12 +477,12 @@ const states = {
       T: 1.05
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.7,
+      T: 1.89
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 1.01,
+      T: 0.6
     },
     ENTP: {
       A: null,
@@ -544,12 +544,12 @@ const states = {
       T: 0.9
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.34,
+      T: 1.54
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 0.85,
+      T: 0.55
     },
     ENTP: {
       A: null,
@@ -611,12 +611,12 @@ const states = {
       T: 1.18
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.82,
+      T: 2.25
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 1.18,
+      T: 0.7
     },
     ENTP: {
       A: null,
@@ -678,12 +678,12 @@ const states = {
       T: 1.34
     },
     INTP: {
-      A: null,
-      T: null
+      A: 2.04,
+      T: 1.96
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 0.79,
+      T: 0.63
     },
     ENTP: {
       A: null,
@@ -745,12 +745,12 @@ const states = {
       T: 0.96
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.7,
+      T: 1.62
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 0.81,
+      T: 0.65
     },
     ENTP: {
       A: null,
@@ -812,12 +812,12 @@ const states = {
       T: 1.15
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.69,
+      T: 1.97
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 0.82,
+      T: 0.55
     },
     ENTP: {
       A: null,
@@ -879,12 +879,12 @@ const states = {
       T: 1.42
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.78,
+      T: 2.42
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 1.36,
+      T: 0.8
     },
     ENTP: {
       A: null,
@@ -946,12 +946,12 @@ const states = {
       T: 1
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.54,
+      T: 2.01
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 0.74,
+      T: 0.57
     },
     ENTP: {
       A: null,
@@ -1013,12 +1013,12 @@ const states = {
       T: 1.04
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.63,
+      T: 2.11
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 0.87,
+      T: 0.61
     },
     ENTP: {
       A: null,
@@ -1080,12 +1080,12 @@ const states = {
       T: 1.05
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.63,
+      T: 2.04
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 0.88,
+      T: 0.61
     },
     ENTP: {
       A: null,
@@ -1147,12 +1147,12 @@ const states = {
       T: 1.13
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.62,
+      T: 2.08
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 1.17,
+      T: 0.79
     },
     ENTP: {
       A: null,
@@ -1214,12 +1214,12 @@ const states = {
       T: 0.91
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.48,
+      T: 1.83
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 0.78,
+      T: 0.58
     },
     ENTP: {
       A: null,
@@ -1281,12 +1281,12 @@ const states = {
       T: 1.02
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.72,
+      T: 2.03
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 0.84,
+      T: 0.62
     },
     ENTP: {
       A: null,
@@ -1348,12 +1348,12 @@ const states = {
       T: 1.15
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.6,
+      T: 2.19
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 0.97,
+      T: 0.77
     },
     ENTP: {
       A: null,
@@ -1415,12 +1415,12 @@ const states = {
       T: 1.15
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.57,
+      T: 2.19
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 1.03,
+      T: 0.85
     },
     ENTP: {
       A: null,
@@ -1482,12 +1482,12 @@ const states = {
       T: 1.23
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.58,
+      T: 2.38
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 1.17,
+      T: 0.86
     },
     ENTP: {
       A: null,
@@ -1549,12 +1549,12 @@ const states = {
       T: 1.26
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.64,
+      T: 2.24
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 0.97,
+      T: 0.68
     },
     ENTP: {
       A: null,
@@ -1616,12 +1616,12 @@ const states = {
       T: 1.07
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.66,
+      T: 2.1
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 1.03,
+      T: 0.74
     },
     ENTP: {
       A: null,
@@ -1684,12 +1684,12 @@ const states = {
       T: 1.04
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.46,
+      T: 2.12
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 0.95,
+      T: 0.7
     },
     ENTP: {
       A: null,
@@ -1751,12 +1751,12 @@ const states = {
       T: 1.19
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.62,
+      T: 2.21
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 0.93,
+      T: 0.75
     },
     ENTP: {
       A: null,
@@ -1818,12 +1818,12 @@ const states = {
       T: 1.36
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.57,
+      T: 2.49
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 0.9,
+      T: 0.72
     },
     ENTP: {
       A: null,
@@ -1885,12 +1885,12 @@ const states = {
       T: 1.16
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.53,
+      T: 2.04
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 0.99,
+      T: 0.78
     },
     ENTP: {
       A: null,
@@ -1952,12 +1952,12 @@ const states = {
       T: 1.07
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.39,
+      T: 1.86
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 1.31,
+      T: 0.97
     },
     ENTP: {
       A: null,
@@ -2019,12 +2019,12 @@ const states = {
       T: 1.2
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.62,
+      T: 2.12
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 0.99,
+      T: 0.79
     },
     ENTP: {
       A: null,
@@ -2086,12 +2086,12 @@ const states = {
       T: 1.28
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.71,
+      T: 2.26
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 1.31,
+      T: 0.85
     },
     ENTP: {
       A: null,
@@ -2153,12 +2153,12 @@ const states = {
       T: 1.15
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.67,
+      T: 2.22
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 1.2,
+      T: 0.77
     },
     ENTP: {
       A: null,
@@ -2220,12 +2220,12 @@ const states = {
       T: 1.1
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.53,
+      T: 2.05
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 1.12,
+      T: 0.76
     },
     ENTP: {
       A: null,
@@ -2287,12 +2287,12 @@ const states = {
       T: 1.17
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.63,
+      T: 2.15
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 1.01,
+      T: 0.71
     },
     ENTP: {
       A: null,
@@ -2354,12 +2354,12 @@ const states = {
       T: 1.12
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.64,
+      T: 2.04
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 1.05,
+      T: 0.68
     },
     ENTP: {
       A: null,
@@ -2421,12 +2421,12 @@ const states = {
       T: 1.55
     },
     INTP: {
-      A: null,
-      T: null
+      A: 2.08,
+      T: 2.86
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 0.92,
+      T: 0.79
     },
     ENTP: {
       A: null,
@@ -2488,12 +2488,12 @@ const states = {
       T: 1.11
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.63,
+      T: 2.21
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 1.03,
+      T: 0.69
     },
     ENTP: {
       A: null,
@@ -2555,12 +2555,12 @@ const states = {
       T: 1.26
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.54,
+      T: 2.41
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 1.07,
+      T: 0.84
     },
     ENTP: {
       A: null,
@@ -2622,12 +2622,12 @@ const states = {
       T: 1.2
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.69,
+      T: 2.33
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 0.92,
+      T: 0.75
     },
     ENTP: {
       A: null,
@@ -2689,12 +2689,12 @@ const states = {
       T: 1.14
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.54,
+      T: 2.25
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 1.17,
+      T: 0.84
     },
     ENTP: {
       A: null,
@@ -2756,12 +2756,12 @@ const states = {
       T: 1.13
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.65,
+      T: 2.43
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 1,
+      T: 0.77
     },
     ENTP: {
       A: null,
@@ -2823,12 +2823,12 @@ const states = {
       T: 1.21
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.49,
+      T: 2.46
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 1.1,
+      T: 0.67
     },
     ENTP: {
       A: null,
@@ -2890,12 +2890,12 @@ const states = {
       T: 1.08
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.45,
+      T: 2.1
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 0.94,
+      T: 0.67
     },
     ENTP: {
       A: null,
@@ -2957,12 +2957,12 @@ const states = {
       T: 0.81
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.68,
+      T: 2.04
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 0.95,
+      T: 0.71
     },
     ENTP: {
       A: null,
@@ -3024,12 +3024,12 @@ const states = {
       T: 1.06
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.61,
+      T: 2.43
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 0.81,
+      T: 0.62
     },
     ENTP: {
       A: null,
@@ -3091,12 +3091,12 @@ const states = {
       T: 1.2
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.55,
+      T: 2.26
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 0.71,
+      T: 0.6
     },
     ENTP: {
       A: null,
@@ -3155,15 +3155,15 @@ const states = {
     respondents: 11640,
     INTJ: {
       A: 1.22,
-      T: null
+      T: 1.26
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.98,
+      T: 2.25
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 0.87,
+      T: 0.49
     },
     ENTP: {
       A: null,
@@ -3222,15 +3222,15 @@ const states = {
     respondents: 21482,
     INTJ: {
       A: 0.91,
-      T: null
+      T: 0.93
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.62,
+      T: 1.74
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 0.79,
+      T: 0.6
     },
     ENTP: {
       A: null,
@@ -3289,15 +3289,15 @@ const states = {
     respondents: 9952,
     INTJ: {
       A: 1.07,
-      T: null
+      T: 1.17,
     },
     INTP: {
-      A: null,
-      T: null
+      A: 1.88,
+      T: 2.54
     },
     ENTJ: {
-      A: null,
-      T: null
+      A: 1.12,
+      T: 0.62
     },
     ENTP: {
       A: null,
