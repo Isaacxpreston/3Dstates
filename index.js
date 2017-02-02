@@ -6,6 +6,8 @@
 //on hover, make state pop up
 //on click, move camera to state and show a popup with state information
 
+
+
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
 

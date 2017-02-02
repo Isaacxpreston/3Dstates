@@ -32,15 +32,15 @@
 				// var object = new THREE.Mesh( geometry, new THREE.MeshLambertMaterial( { color: Math.random() * 0xffffff } ) );
 				// scene.add( object );
 
-
+				//TODO-- ADD WI AND DE
 
 
 				//SVG LOADER////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-				function createMesh(geom, region) {
-						var meshMaterial = /*new THREE.MeshStandardMaterial({color: 0xFFFFFF});*/ new THREE.MeshLambertMaterial( { color: Math.random() * 0xffffff } )
+				function createMesh(geom) { //params
+						var meshMaterial = new THREE.MeshLambertMaterial( { color: Math.random() * 0xffffff } ) //add parameter here
 						var mesh = new THREE.Mesh(geom, meshMaterial);
-						mesh.scale.z = 10
+						mesh.scale.z = 10 //add parameter here
 						return mesh;
 				}
 
@@ -251,17 +251,17 @@
 					if ( INTERSECTED != intersects[ 0 ].object ) {
 						if ( INTERSECTED ) {
 							INTERSECTED.material.emissive.setHex( INTERSECTED.currentHex )
-							INTERSECTED.scale.z = 10
+							INTERSECTED.scale.z -= 25
 						};
 						INTERSECTED = intersects[ 0 ].object;
 						INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
 						INTERSECTED.material.emissive.setHex( 0xff0000 );
-						INTERSECTED.scale.z = 25
+						INTERSECTED.scale.z += 25
 					}
 				} else {
 					if ( INTERSECTED ) {
 						INTERSECTED.material.emissive.setHex( INTERSECTED.currentHex )
-						INTERSECTED.scale.z = 10
+						INTERSECTED.scale.z -= 25
 					};
 					INTERSECTED = null;
 				}
