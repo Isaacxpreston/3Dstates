@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgl - interactive cubes</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-		<style>
-			body {
-				font-family: Monospace;
-				background-color: #f0f0f0;
-				margin: 0px;
-				overflow: hidden;
-			}
-		</style>
 	</head>
 	<body>
 
@@ -34,13 +23,17 @@
 
 				camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 1, 10000 );
 				scene = new THREE.Scene();
-				var light = new THREE.DirectionalLight( 0xffffff, 1 );
-				light.position.set( 1, 1, 1 ).normalize();
+
+				var light = new THREE.DirectionalLight( 0xffffff, 2 );
+				light.position.set( 0.2, 0.2, 0.2 ).normalize();
 				scene.add( light );
 
 				// var geometry = new THREE.BoxBufferGeometry( 20, 20, 20 );
 				// var object = new THREE.Mesh( geometry, new THREE.MeshLambertMaterial( { color: Math.random() * 0xffffff } ) );
 				// scene.add( object );
+
+
+
 
 				//SVG LOADER////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -204,6 +197,9 @@
 
 				////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+
+
 				raycaster = new THREE.Raycaster();
 
 				renderer = new THREE.WebGLRenderer();
@@ -239,8 +235,8 @@
 
 			function render() {
 
-
 				scene.scale.set(0.1, 0.1, 0.1)
+				scene.position.y = 0.1
 				scene.rotation.x = 1
 				camera.position.set(0,100,0); camera.lookAt(scene.position);
 
@@ -258,6 +254,7 @@
 						INTERSECTED = intersects[ 0 ].object;
 						INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
 						INTERSECTED.material.emissive.setHex( 0xff0000 );
+						INTERSECTED.scale.z = 25
 					}
 				} else {
 					if ( INTERSECTED ) {
