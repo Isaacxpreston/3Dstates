@@ -4,8 +4,8 @@ const states = {
   TX: {
     respondents: 374389,
     INTJ: {
-      A: null,
-      T: null
+      A: 1.11,
+      T: 1.13
     },
     INTP: {
       A: null,
@@ -71,8 +71,8 @@ const states = {
   OK: {
     respondents: 49348,
     INTJ: {
-      A: null,
-      T: null
+      A: 1.05,
+      T: 1.22
     },
     INTP: {
       A: null,
@@ -138,8 +138,8 @@ const states = {
   KS: {
     respondents: 42481,
     INTJ: {
-      A: null,
-      T: null
+      A: 1.01,
+      T: 1.07
     },
     INTP: {
       A: null,
@@ -205,8 +205,8 @@ const states = {
   NE: {
     respondents: 29056,
     INTJ: {
-      A: null,
-      T: null
+      A: 0.91,
+      T: 1.1
     },
     INTP: {
       A: null,
@@ -272,8 +272,8 @@ const states = {
   SD: {
     respondents: 9941,
     INTJ: {
-      A: null,
-      T: null
+      A: 1.1,
+      T: 1.13
     },
     INTP: {
       A: null,
@@ -339,8 +339,8 @@ const states = {
   ND: {
     respondents: 9992,
     INTJ: {
-      A: null,
-      T: null
+      A: 0.86,
+      T: 0.88
     },
     INTP: {
       A: null,
@@ -406,8 +406,8 @@ const states = {
   NM: {
     respondents: 18112,
     INTJ: {
-      A: null,
-      T: null
+      A: 1.18,
+      T: 1.2
     },
     INTP: {
       A: null,
@@ -473,8 +473,8 @@ const states = {
   CO: {
     respondents: 99436,
     INTJ: {
-      A: null,
-      T: null
+      A: 1.12,
+      T: 1.05
     },
     INTP: {
       A: null,
@@ -540,8 +540,8 @@ const states = {
   UT: {
     respondents: 64761,
     INTJ: {
-      A: null,
-      T: null
+      A: 0.99,
+      T: 0.9
     },
     INTP: {
       A: null,
@@ -607,8 +607,8 @@ const states = {
   AZ: {
     respondents: 87579,
     INTJ: {
-      A: null,
-      T: null
+      A: 1.06,
+      T: 1.18
     },
     INTP: {
       A: null,
@@ -674,8 +674,8 @@ const states = {
   WY: {
     respondents: 8078,
     INTJ: {
-      A: null,
-      T: null
+      A: 1.11,
+      T: 1.34
     },
     INTP: {
       A: null,
@@ -741,8 +741,8 @@ const states = {
   ID: {
     respondents: 28191,
     INTJ: {
-      A: null,
-      T: null
+      A: 0.95,
+      T: 0.96
     },
     INTP: {
       A: null,
@@ -808,8 +808,8 @@ const states = {
   MT: {
     respondents: 14491,
     INTJ: {
-      A: null,
-      T: null
+      A: 0.97,
+      T: 1.15
     },
     INTP: {
       A: null,
@@ -875,8 +875,8 @@ const states = {
   NV: {
     respondents: 34576,
     INTJ: {
-      A: null,
-      T: null
+      A: 1.1,
+      T: 1.42
     },
     INTP: {
       A: null,
@@ -942,8 +942,8 @@ const states = {
   OR: {
     respondents: 76492,
     INTJ: {
-      A: null,
-      T: null
+      A: 1.03,
+      T: 1
     },
     INTP: {
       A: null,
@@ -1009,8 +1009,8 @@ const states = {
   WI: {
     respondents: 74026,
     INTJ: {
-      A: null,
-      T: null
+      A: 1.02,
+      T: 1.04
     },
     INTP: {
       A: null,
@@ -1076,8 +1076,8 @@ const states = {
   WA: {
     respondents: 138968,
     INTJ: {
-      A: null,
-      T: null
+      A: 1.06,
+      T: 1.05
     },
     INTP: {
       A: null,
@@ -1143,8 +1143,8 @@ const states = {
   CA: {
     respondents: 663022,
     INTJ: {
-      A: null,
-      T: null
+      A: 1.09,
+      T: 1.13
     },
     INTP: {
       A: null,
@@ -1210,8 +1210,8 @@ const states = {
   MN: {
     respondents: 97434,
     INTJ: {
-      A: null,
-      T: null
+      A: 0.91,
+      T: 0.91
     },
     INTP: {
       A: null,
@@ -1277,8 +1277,8 @@ const states = {
   IA: {
     respondents: 47449,
     INTJ: {
-      A: null,
-      T: null
+      A: 0.82,
+      T: 1.02
     },
     INTP: {
       A: null,
@@ -1344,8 +1344,8 @@ const states = {
   MO: {
     respondents: 83641,
     INTJ: {
-      A: null,
-      T: null
+      A: 1.11,
+      T: 1.15
     },
     INTP: {
       A: null,
@@ -1411,8 +1411,8 @@ const states = {
   AR: {
     respondents: 35509,
     INTJ: {
-      A: null,
-      T: null
+      A: 1.11,
+      T: 1.15
     },
     INTP: {
       A: null,
@@ -1478,8 +1478,8 @@ const states = {
   LA: {
     respondents: 44618,
     INTJ: {
-      A: null,
-      T: null
+      A: 1.04,
+      T: 1.23
     },
     INTP: {
       A: null,
@@ -1545,8 +1545,8 @@ const states = {
   MI: {
     respondents: 117290,
     INTJ: {
-      A: null,
-      T: null
+      A: 1.01,
+      T: 1.26
     },
     INTP: {
       A: null,
@@ -1612,8 +1612,8 @@ const states = {
   IL: {
     respondents: 167880,
     INTJ: {
-      A: null,
-      T: null
+      A: 0.94,
+      T: 1.07
     },
     INTP: {
       A: null,
@@ -1680,8 +1680,8 @@ const states = {
   IN: {
     respondents: 75226,
     INTJ: {
-      A: null,
-      T: null
+      A: 0.95,
+      T: 1.04
     },
     INTP: {
       A: null,
@@ -1747,8 +1747,8 @@ const states = {
   OH: {
     respondents: 136208,
     INTJ: {
-      A: null,
-      T: null
+      A: 1,
+      T: 1.19
     },
     INTP: {
       A: null,
@@ -1814,8 +1814,8 @@ const states = {
   KY: {
     respondents: 49336,
     INTJ: {
-      A: null,
-      T: null
+      A: 1.05,
+      T: 1.36
     },
     INTP: {
       A: null,
@@ -1881,8 +1881,8 @@ const states = {
   TN: {
     respondents: 84850,
     INTJ: {
-      A: null,
-      T: null
+      A: 1.05,
+      T: 1.16
     },
     INTP: {
       A: null,
@@ -1948,8 +1948,8 @@ const states = {
   MS: {
     respondents: 27098,
     INTJ: {
-      A: null,
-      T: null
+      A: 1.08,
+      T: 1.07
     },
     INTP: {
       A: null,
@@ -2015,8 +2015,8 @@ const states = {
   AL: {
     respondents: 54745,
     INTJ: {
-      A: null,
-      T: null
+      A: 1.05,
+      T: 1.2
     },
     INTP: {
       A: null,
@@ -2082,8 +2082,8 @@ const states = {
   FL: {
     respondents: 233398,
     INTJ: {
-      A: null,
-      T: null
+      A: 1.12,
+      T: 1.28
     },
     INTP: {
       A: null,
@@ -2149,8 +2149,8 @@ const states = {
   GA: {
     respondents: 128973,
     INTJ: {
-      A: null,
-      T: null
+      A: 1.14,
+      T: 1.15
     },
     INTP: {
       A: null,
@@ -2216,8 +2216,8 @@ const states = {
   SC: {
     respondents: 50762,
     INTJ: {
-      A: null,
-      T: null
+      A: 1.01,
+      T: 1.1
     },
     INTP: {
       A: null,
@@ -2283,8 +2283,8 @@ const states = {
   NC: {
     respondents: 132757,
     INTJ: {
-      A: null,
-      T: null
+      A: 1.08,
+      T: 1.17
     },
     INTP: {
       A: null,
@@ -2350,8 +2350,8 @@ const states = {
   VA: {
     respondents: 131327,
     INTJ: {
-      A: null,
-      T: null
+      A: 1.08,
+      T: 1.12
     },
     INTP: {
       A: null,
@@ -2417,8 +2417,8 @@ const states = {
   WV: {
     respondents: 15385,
     INTJ: {
-      A: null,
-      T: null
+      A: 1,
+      T: 1.55
     },
     INTP: {
       A: null,
@@ -2484,8 +2484,8 @@ const states = {
   MD: {
     respondents: 89425,
     INTJ: {
-      A: null,
-      T: null
+      A: 1.04,
+      T: 1.11
     },
     INTP: {
       A: null,
@@ -2551,8 +2551,8 @@ const states = {
   NJ: {
     respondents: 94687,
     INTJ: {
-      A: null,
-      T: null
+      A: 1.03,
+      T: 1.26
     },
     INTP: {
       A: null,
@@ -2618,8 +2618,8 @@ const states = {
   PA: {
     respondents: 141502,
     INTJ: {
-      A: null,
-      T: null
+      A: 1,
+      T: 1.2
     },
     INTP: {
       A: null,
@@ -2685,8 +2685,8 @@ const states = {
   NY: {
     respondents: 252852,
     INTJ: {
-      A: null,
-      T: null
+      A: 1.03,
+      T: 1.14
     },
     INTP: {
       A: null,
@@ -2752,8 +2752,8 @@ const states = {
   CT: {
     respondents: 44348,
     INTJ: {
-      A: null,
-      T: null
+      A: 1,
+      T: 1.13
     },
     INTP: {
       A: null,
@@ -2819,8 +2819,8 @@ const states = {
   RI: {
     respondents: 12379,
     INTJ: {
-      A: null,
-      T: null
+      A: 1.03,
+      T: 1.21
     },
     INTP: {
       A: null,
@@ -2886,8 +2886,8 @@ const states = {
   MA: {
     respondents: 101081,
     INTJ: {
-      A: null,
-      T: null
+      A: 0.86,
+      T: 1.08
     },
     INTP: {
       A: null,
@@ -2953,8 +2953,8 @@ const states = {
   VT: {
     respondents: 9533,
     INTJ: {
-      A: null,
-      T: null
+      A: 0.97,
+      T: 0.81
     },
     INTP: {
       A: null,
@@ -3020,8 +3020,8 @@ const states = {
   NH: {
     respondents: 18247,
     INTJ: {
-      A: null,
-      T: null
+      A: 0.97,
+      T: 1.06
     },
     INTP: {
       A: null,
@@ -3087,8 +3087,8 @@ const states = {
   ME: {
     respondents: 19257,
     INTJ: {
-      A: null,
-      T: null
+      A: 1.02,
+      T: 1.2
     },
     INTP: {
       A: null,
@@ -3154,7 +3154,7 @@ const states = {
   AK: {
     respondents: 11640,
     INTJ: {
-      A: null,
+      A: 1.22,
       T: null
     },
     INTP: {
@@ -3221,7 +3221,7 @@ const states = {
   HI: {
     respondents: 21482,
     INTJ: {
-      A: null,
+      A: 0.91,
       T: null
     },
     INTP: {
@@ -3288,7 +3288,7 @@ const states = {
   DE: {
     respondents: 9952,
     INTJ: {
-      A: null,
+      A: 1.07,
       T: null
     },
     INTP: {
