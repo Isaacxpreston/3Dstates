@@ -40,6 +40,7 @@
 				function createMesh(geom, region) {
 						var meshMaterial = /*new THREE.MeshStandardMaterial({color: 0xFFFFFF});*/ new THREE.MeshLambertMaterial( { color: Math.random() * 0xffffff } )
 						var mesh = new THREE.Mesh(geom, meshMaterial);
+						mesh.scale.z = 10
 						return mesh;
 				}
 
@@ -250,6 +251,7 @@
 					if ( INTERSECTED != intersects[ 0 ].object ) {
 						if ( INTERSECTED ) {
 							INTERSECTED.material.emissive.setHex( INTERSECTED.currentHex )
+							INTERSECTED.scale.z = 10
 						};
 						INTERSECTED = intersects[ 0 ].object;
 						INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
@@ -259,6 +261,7 @@
 				} else {
 					if ( INTERSECTED ) {
 						INTERSECTED.material.emissive.setHex( INTERSECTED.currentHex )
+						INTERSECTED.scale.z = 10
 					};
 					INTERSECTED = null;
 				}
