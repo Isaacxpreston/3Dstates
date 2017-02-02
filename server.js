@@ -17,6 +17,10 @@ app.use(express.static(__dirname));
 // }));
 // app.use(require('webpack-hot-middleware')(compiler));
 
+app.get('/cubes', (req, res) => (
+  res.sendFile(path.resolve(__dirname, /*'../client/app',*/ 'webgl_interactive_cubes.html'))
+));
+
 app.get('/', (req, res) => (
   res.sendFile(path.resolve(__dirname, /*'../client/app',*/ 'index.html'))
 ));

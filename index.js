@@ -1,3 +1,11 @@
+//TODO - All personality data by state, add a method that color coordinates by percentage out of entire US
+//(ie. x% of infps in the united states live here)
+//instead of x% of this state's population are infp
+//or both idk
+
+//on hover, make state pop up
+//on click, move camera to state and show a popup with state information
+
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
 
@@ -14,8 +22,8 @@ renderer.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderer.domElement );
 
 //SVG LOADER
-function createMesh(geom) {
-    var meshMaterial = new THREE.MeshStandardMaterial({color: 0x00FF00});
+function createMesh(geom, region) {
+    var meshMaterial = /*new THREE.MeshStandardMaterial({color: 0xFFFFFF});*/ new THREE.MeshLambertMaterial( { color: Math.random() * 0xffffff } )
     var mesh = new THREE.Mesh(geom, meshMaterial);
     return mesh;
 }
@@ -123,7 +131,6 @@ let ME = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(MEPath), o
 let AK = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(AKPath), options))
 let HI = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(HIPath), options))
 
-
 scene.add(TX)
 scene.add(OK)
 scene.add(KS)
@@ -181,7 +188,6 @@ camera.position.set(0,100,0); camera.lookAt(scene.position);
 //ANIMATE
 var render = function () {
   requestAnimationFrame( render );
-  //TX.scale.set(TX.scale.x, TX.scale.y, TX.scale.z + 0.1)
   renderer.render(scene, camera);
 };
 
