@@ -1,5 +1,72 @@
 const population = 4645382
 
+const percentages = {
+  INTJ: {
+    A: 1.04,
+    T: 1.14
+  },
+  INTP: {
+    A: 1.63,
+    T: 2.13
+  },
+  ENTJ: {
+    A: 1.06,
+    T: 0.74
+  },
+  ENTP: {
+    A: 2.11,
+    T: 1.45
+  },
+  INFJ: {
+    A: 1.33,
+    T: 3.14
+  },
+  INFP: {
+    A: 2.39,
+    T: 5.94
+  },
+  ENFJ: {
+    A: 2.22,
+    T: 2.03
+  },
+  ENFP: {
+    A: 4.49,
+    T: 4.43
+  },
+  ISTJ: {
+    A: 3.61,
+    T: 2.22
+  },
+  ISFJ: {
+    A: 5.96,
+    T: 6.35
+  },
+  ESTJ: {
+    A: 5.06,
+    T: 1.31
+  },
+  ESFJ: {
+    A: 10.11,
+    T: 3.98
+  },
+  ISTP: {
+    A: 2.18,
+    T: 1.56
+  },
+  ISFP: {
+    A: 3.54,
+    T: 4.23
+  },
+  ESTP: {
+    A: 2.91,
+    T: 0.98
+  },
+  ESFP: {
+    A: 5.82,
+    T: 2.91
+  }
+}
+
 const states = {
   TX: {
     respondents: 374389,

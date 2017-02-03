@@ -37,11 +37,22 @@
 				//TODO-- ADD WI AND DE
 
 				//SVG LOADER////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+				let total = 0
 
-				function createMesh(geom) { //params
-						var meshMaterial = new THREE.MeshLambertMaterial( { color: "rgb(255, 255, 255)" } ) //add parameter here
-						var mesh = new THREE.Mesh(geom, meshMaterial);
-						mesh.scale.z = 10 //add parameter here
+				const createMesh = (path, name, personality) => { //params
+						//number of people with personality type, combined A and T
+						//percentages added and multiplued by total number of respondents
+						let peopleInState = ((states[name][personality]["A"] + states[name][personality]["T"]) / 100) * states[name]["respondents"]
+						let peopleTotal = ((percentages[personality]["A"] + percentages[personality]["T"]) / 100) * population
+						let percentageInState = peopleInState / peopleTotal
+						total += percentageInState
+						console.log(name, personality, ': ', percentageInState)
+						//TODO - INSTEAD of dividing by total population, which produces extrememely low number,
+						//possibly divide by total number of personality type in population?
+						//ie, there are 100,000 INFPS, 10% of which live in texas. INFPS make up 2% of the US population. etc.
+						var meshMaterial = new THREE.MeshLambertMaterial( { color: "rgb(100%, 100%, 100%)" } ) //add parameter here
+						var mesh = new THREE.Mesh(path, meshMaterial);
+						mesh.scale.z = 10 //add parameter here 	
 						scene.add(mesh)
 				}
 
@@ -51,105 +62,11 @@
 				};
 
 				statePaths.forEach((state) => {
-					createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(state.path), options))
+					let path = new THREE.ExtrudeGeometry(transformSVGPathExposed(state.path), options)
+					createMesh(path, state.name, "ESFJ")
 				})
-				// var TX = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(TXPath), options))
-				// var OK = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(OKPath), options))
-				// var KS = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(KSPath), options))
-				// var NE = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(NEPath), options))
-				// var SD = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(SDPath), options))
-				// var ND = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(NDPath), options))
-				// let NM = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(NMPath), options))
-				// let CO = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(COPath), options))
-				// let UT = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(UTPath), options))
-				// let AZ = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(AZPath), options))
-				// let WY = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(WYPath), options))
-				// let ID = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(IDPath), options))
-				// let MT = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(MTPath), options))
-				// let NV = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(NVPath), options))
-				// let OR = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(ORPath), options))
-				// let WA = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(WAPath), options))
-				// let CA = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(CAPath), options))
-				// let MN = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(MNPath), options))
-				// let IA = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(IAPath), options))
-				// let MO = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(MOPath), options))
-				// let AR = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(ARPath), options))
-				// let LA = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(LAPath), options))
-				// let MI = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(MIPath), options))
-				// let IL = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(ILPath), options))
-				// let IN = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(INPath), options))
-				// let OH = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(OHPath), options))
-				// let KY = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(KYPath), options))
-				// let TN = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(TNPath), options))
-				// let MS = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(MSPath), options))
-				// let AL = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(ALPath), options))
-				// let FL = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(FLPath), options))
-				// let GA = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(GAPath), options))
-				// let SC = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(SCPath), options))
-				// let NC = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(NCPath), options))
-				// let VA = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(VAPath), options))
-				// let WV = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(WVPath), options))
-				// let MD = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(MDPath), options))
-				// let NJ = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(NJPath), options))
-				// let PA = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(PAPath), options))
-				// let NY = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(NYPath), options))
-				// let CT = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(CTPath), options))
-				// let RI = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(RIPath), options))
-				// let MA = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(MAPath), options))
-				// let VT = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(VTPath), options))
-				// let NH = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(NHPath), options))
-				// let ME = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(MEPath), options))
-				// let AK = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(AKPath), options))
-				// let HI = createMesh(new THREE.ExtrudeGeometry(transformSVGPathExposed(HIPath), options))
 
-				// scene.add(TX)
-				// scene.add(OK)
-				// scene.add(KS)
-				// scene.add(NE)
-				// scene.add(SD)
-				// scene.add(ND)
-				// scene.add(NM)
-				// scene.add(CO)
-				// scene.add(UT)
-				// scene.add(AZ)
-				// scene.add(WY)
-				// scene.add(ID)
-				// scene.add(MT)
-				// scene.add(NV)
-				// scene.add(OR)
-				// scene.add(WA)
-				// scene.add(CA)
-				// scene.add(MN)
-				// scene.add(IA)
-				// scene.add(MO)
-				// scene.add(AR)
-				// scene.add(LA)
-				// scene.add(MI)
-				// scene.add(IL)
-				// scene.add(IN)
-				// scene.add(OH)
-				// scene.add(KY)
-				// scene.add(TN)
-				// scene.add(MS)
-				// scene.add(AL)
-				// scene.add(FL)
-				// scene.add(GA)
-				// scene.add(SC)
-				// scene.add(NC)
-				// scene.add(VA)
-				// scene.add(WV)
-				// scene.add(MD)
-				// scene.add(NJ)
-				// scene.add(PA)
-				// scene.add(NY)
-				// scene.add(CT)
-				// scene.add(RI)
-				// scene.add(MA)
-				// scene.add(VT)
-				// scene.add(NH)
-				// scene.add(ME)
-				// scene.add(AK)
-				// scene.add(HI)
+				console.log("TOTAL", total)
 
 				////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
