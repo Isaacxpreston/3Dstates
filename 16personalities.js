@@ -16,16 +16,16 @@ const states = {
       T: 0.79
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 2.32,
+      T: 1.56
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.35,
+      T: 3.06
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.44,
+      T: 5.79
     },
     ENFJ: {
       A: null,
@@ -83,16 +83,16 @@ const states = {
       T: 0.65
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 2.01,
+      T: 1.22
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.31,
+      T: 3.21
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.5,
+      T: 6.27
     },
     ENFJ: {
       A: null,
@@ -150,16 +150,16 @@ const states = {
       T: 0.69
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 1.98,
+      T: 1.4
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.25,
+      T: 3.2
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.13,
+      T: 5.97
     },
     ENFJ: {
       A: null,
@@ -217,16 +217,16 @@ const states = {
       T: 0.65
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 1.81,
+      T: 1.44
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.35,
+      T: 3.14
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.4,
+      T: 6.19
     },
     ENFJ: {
       A: null,
@@ -284,16 +284,16 @@ const states = {
       T: 0.58
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 1.63,
+      T: 1.34
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.37,
+      T: 3.14
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.8,
+      T: 6.19
     },
     ENFJ: {
       A: null,
@@ -351,16 +351,16 @@ const states = {
       T: 0.44
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 1.72,
+      T: 1.11
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.11,
+      T: 2.74
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.42,
+      T: 6.3
     },
     ENFJ: {
       A: null,
@@ -418,16 +418,16 @@ const states = {
       T: 0.73
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 2.34,
+      T: 1.54
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.44,
+      T: 3.01
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.9,
+      T: 6.33
     },
     ENFJ: {
       A: null,
@@ -485,16 +485,16 @@ const states = {
       T: 0.6
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 2.22,
+      T: 1.31
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.39,
+      T: 2.88
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.6,
+      T: 5.55
     },
     ENFJ: {
       A: null,
@@ -552,16 +552,16 @@ const states = {
       T: 0.55
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 1.8,
+      T: 1.13
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.62,
+      T: 3.25
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.71,
+      T: 5.57
     },
     ENFJ: {
       A: null,
@@ -619,16 +619,16 @@ const states = {
       T: 0.7
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 2.22,
+      T: 1.45
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.41,
+      T: 3.2
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.42,
+      T: 5.86
     },
     ENFJ: {
       A: null,
@@ -686,16 +686,16 @@ const states = {
       T: 0.63
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 2.03,
+      T: 1.23
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.57,
+      T: 2.77
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.83,
+      T: 5.64
     },
     ENFJ: {
       A: null,
@@ -753,16 +753,16 @@ const states = {
       T: 0.65
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 1.67,
+      T: 1.11
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.43,
+      T: 3.09
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.73,
+      T: 5.93
     },
     ENFJ: {
       A: null,
@@ -820,16 +820,16 @@ const states = {
       T: 0.55
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 1.85,
+      T: 1.13
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.66,
+      T: 2.94
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.78,
+      T: 5.98
     },
     ENFJ: {
       A: null,
@@ -887,16 +887,16 @@ const states = {
       T: 0.8
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 2.27,
+      T: 1.6
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.43,
+      T: 3.42
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.67,
+      T: 6.61
     },
     ENFJ: {
       A: null,
@@ -954,16 +954,16 @@ const states = {
       T: 0.57
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 1.79,
+      T: 1.16
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.43,
+      T: 3.17
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.67,
+      T: 6.3
     },
     ENFJ: {
       A: null,
@@ -1021,16 +1021,16 @@ const states = {
       T: 0.61
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 1.83,
+      T: 1.18
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.17,
+      T: 3.2
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.33,
+      T: 5.96
     },
     ENFJ: {
       A: null,
@@ -1088,16 +1088,16 @@ const states = {
       T: 0.61
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 1.88,
+      T: 1.17
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.38,
+      T: 3.04
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.66,
+      T: 6.02
     },
     ENFJ: {
       A: null,
@@ -1155,16 +1155,16 @@ const states = {
       T: 0.79
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 2.18,
+      T: 1.55
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.37,
+      T: 2.99
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.43,
+      T: 5.65
     },
     ENFJ: {
       A: null,
@@ -1222,16 +1222,16 @@ const states = {
       T: 0.58
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 1.79,
+      T: 1.16
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.29,
+      T: 2.84
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.4,
+      T: 5.56
     },
     ENFJ: {
       A: null,
@@ -1289,16 +1289,16 @@ const states = {
       T: 0.62
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 1.98,
+      T: 1.21
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.17,
+      T: 3.06
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.21,
+      T: 5.68
     },
     ENFJ: {
       A: null,
@@ -1356,16 +1356,16 @@ const states = {
       T: 0.77
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 2.06,
+      T: 1.3
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.3,
+      T: 3.33
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.34,
+      T: 5.89
     },
     ENFJ: {
       A: null,
@@ -1423,16 +1423,16 @@ const states = {
       T: 0.85
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 1.99,
+      T: 1.43
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.42,
+      T: 3.22
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.42,
+      T: 5.93
     },
     ENFJ: {
       A: null,
@@ -1490,16 +1490,16 @@ const states = {
       T: 0.86
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 2.28,
+      T: 1.53
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.39,
+      T: 3.36
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.42,
+      T: 6.35
     },
     ENFJ: {
       A: null,
@@ -1557,16 +1557,16 @@ const states = {
       T: 0.68
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 1.96,
+      T: 1.42
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.29,
+      T: 3.29
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.34,
+      T: 6.39
     },
     ENFJ: {
       A: null,
@@ -1624,16 +1624,16 @@ const states = {
       T: 0.74
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 2.14,
+      T: 1.48
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.28,
+      T: 3.11
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.23,
+      T: 5.79
     },
     ENFJ: {
       A: null,
@@ -1692,16 +1692,16 @@ const states = {
       T: 0.7
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 1.9,
+      T: 1.34
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.24,
+      T: 3.19
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.22,
+      T: 6.02
     },
     ENFJ: {
       A: null,
@@ -1759,16 +1759,16 @@ const states = {
       T: 0.75
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 1.95,
+      T: 1.34
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.3,
+      T: 3.38
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.32,
+      T: 6.36
     },
     ENFJ: {
       A: null,
@@ -1826,16 +1826,16 @@ const states = {
       T: 0.72
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 2.05,
+      T: 1.42
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.28,
+      T: 3.5
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.31,
+      T: 6.74
     },
     ENFJ: {
       A: null,
@@ -1893,16 +1893,16 @@ const states = {
       T: 0.78
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 2.15,
+      T: 1.36
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.28,
+      T: 3.22
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.26,
+      T: 5.82
     },
     ENFJ: {
       A: null,
@@ -1960,16 +1960,16 @@ const states = {
       T: 0.97
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 2.21,
+      T: 1.61
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.24,
+      T: 3.3
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.23,
+      T: 5.38
     },
     ENFJ: {
       A: null,
@@ -2027,16 +2027,16 @@ const states = {
       T: 0.79
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 2.02,
+      T: 1.39
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.35,
+      T: 3.15
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.28,
+      T: 5.67
     },
     ENFJ: {
       A: null,
@@ -2094,16 +2094,16 @@ const states = {
       T: 0.85
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 2.34,
+      T: 1.56
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.43,
+      T: 3.3
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.48,
+      T: 6
     },
     ENFJ: {
       A: null,
@@ -2161,16 +2161,16 @@ const states = {
       T: 0.77
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 2.14,
+      T: 1.42
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.36,
+      T: 3.22
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.38,
+      T: 5.76
     },
     ENFJ: {
       A: null,
@@ -2228,16 +2228,16 @@ const states = {
       T: 0.76
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 2.04,
+      T: 1.44
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.26,
+      T: 3.18
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.2,
+      T: 5.77
     },
     ENFJ: {
       A: null,
@@ -2295,16 +2295,16 @@ const states = {
       T: 0.71
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 2.13,
+      T: 1.36
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.36,
+      T: 3.22
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.35,
+      T: 6.03
     },
     ENFJ: {
       A: null,
@@ -2362,16 +2362,16 @@ const states = {
       T: 0.68
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 1.95,
+      T: 1.31
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.29,
+      T: 3.14
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.26,
+      T: 5.76
     },
     ENFJ: {
       A: null,
@@ -2429,16 +2429,16 @@ const states = {
       T: 0.79
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 1.94,
+      T: 1.61
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.3,
+      T: 4.06
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.17,
+      T: 7.74
     },
     ENFJ: {
       A: null,
@@ -2496,16 +2496,16 @@ const states = {
       T: 0.69
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 2.2,
+      T: 1.47
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.3,
+      T: 3.02
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.28,
+      T: 5.95
     },
     ENFJ: {
       A: null,
@@ -2563,16 +2563,16 @@ const states = {
       T: 0.84
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 2.2,
+      T: 1.71
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.27,
+      T: 3.35
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.23,
+      T: 6.46
     },
     ENFJ: {
       A: null,
@@ -2630,16 +2630,16 @@ const states = {
       T: 0.75
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 1.97,
+      T: 1.46
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.3,
+      T: 3.24
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.36,
+      T: 6.46
     },
     ENFJ: {
       A: null,
@@ -2697,16 +2697,16 @@ const states = {
       T: 0.84
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 2.2,
+      T: 1.72
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.29,
+      T: 3.14
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.26,
+      T: 5.97
     },
     ENFJ: {
       A: null,
@@ -2764,16 +2764,16 @@ const states = {
       T: 0.77
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 1.93,
+      T: 1.67
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.25,
+      T: 3.38
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.22,
+      T: 6.35
     },
     ENFJ: {
       A: null,
@@ -2831,16 +2831,16 @@ const states = {
       T: 0.67
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 1.92,
+      T: 1.68
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.38,
+      T: 3.62
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.59,
+      T: 7.08
     },
     ENFJ: {
       A: null,
@@ -2898,16 +2898,16 @@ const states = {
       T: 0.67
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 1.97,
+      T: 1.43
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.18,
+      T: 3.11
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.3,
+      T: 6.17
     },
     ENFJ: {
       A: null,
@@ -2965,16 +2965,16 @@ const states = {
       T: 0.71
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 1.93,
+      T: 1.15
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.46,
+      T: 3.23
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.82,
+      T: 6.78
     },
     ENFJ: {
       A: null,
@@ -3032,16 +3032,16 @@ const states = {
       T: 0.62
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 1.82,
+      T: 1.17
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.24,
+      T: 3.39
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.64,
+      T: 6.73
     },
     ENFJ: {
       A: null,
@@ -3099,16 +3099,16 @@ const states = {
       T: 0.6
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 1.77,
+      T: 1.26
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.39,
+      T: 3.4
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.66,
+      T: 7.49
     },
     ENFJ: {
       A: null,
@@ -3166,16 +3166,16 @@ const states = {
       T: 0.49
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 2.09,
+      T: 1.06
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.47,
+      T: 3.08
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.65,
+      T: 6.31
     },
     ENFJ: {
       A: null,
@@ -3233,16 +3233,16 @@ const states = {
       T: 0.6
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 1.66,
+      T: 1.16
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.21,
+      T: 2.99
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.54,
+      T: 5.84
     },
     ENFJ: {
       A: null,
@@ -3300,16 +3300,16 @@ const states = {
       T: 0.62
     },
     ENTP: {
-      A: null,
-      T: null
+      A: 2.36,
+      T: 1.44
     },
     INFJ: {
-      A: null,
-      T: null
+      A: 1.17,
+      T: 3.49
     },
     INFP: {
-      A: null,
-      T: null
+      A: 2.38,
+      T: 6.32
     },
     ENFJ: {
       A: null,
