@@ -37,20 +37,33 @@
 				//TODO-- ADD WI AND DE
 
 				//SVG LOADER////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-				let total = 0
+
+				const percentOfState = (name, personality) => {
+					return (states[name][personality]['A'] + states[name][personality]['T']) / 100
+				}
+
+				const getMax = (personality) => {
+					let max = 0;
+					for(var name in states) {
+						let temp = percentOfState(name, personality)
+						if(temp > max) {
+							max = temp
+						}
+					}
+					return max
+				}
 
 				const createMesh = (path, name, personality) => { //params
-						//number of people with personality type, combined A and T
-						//percentages added and multiplued by total number of respondents
-						let peopleInState = ((states[name][personality]["A"] + states[name][personality]["T"]) / 100) * states[name]["respondents"]
-						let peopleTotal = ((percentages[personality]["A"] + percentages[personality]["T"]) / 100) * population
-						let percentageInState = peopleInState / peopleTotal
-						total += percentageInState
-						console.log(name, personality, ': ', percentageInState)
-						//TODO - INSTEAD of dividing by total population, which produces extrememely low number,
-						//possibly divide by total number of personality type in population?
-						//ie, there are 100,000 INFPS, 10% of which live in texas. INFPS make up 2% of the US population. etc.
-						var meshMaterial = new THREE.MeshLambertMaterial( { color: "rgb(100%, 100%, 100%)" } ) //add parameter here
+
+						let max = getMax(personality)
+						let percent = ((percentOfState(name, personality) / max) * 100).toFixed() /1.5
+						console.log(name, percent)
+
+						//METHOD TWO -UNWEIGHTED
+						//TODO -- create external method to set max of all percentOfStates first, then add them to the scene
+						//percentOfState / currentMax = one of the colors - between 0 and 100% (ie 15 / 15 * 100)
+
+						var meshMaterial = new THREE.MeshLambertMaterial( { color: "rgb("+ percent + "%, " + percent + "%, " + percent + "%)" } ) //add parameter here
 						var mesh = new THREE.Mesh(path, meshMaterial);
 						mesh.scale.z = 10 //add parameter here 	
 						scene.add(mesh)
@@ -63,15 +76,10 @@
 
 				statePaths.forEach((state) => {
 					let path = new THREE.ExtrudeGeometry(transformSVGPathExposed(state.path), options)
-					createMesh(path, state.name, "ESFJ")
+					createMesh(path, state.name, "ISFJ")
 				})
 
-				console.log("TOTAL", total)
-
 				////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
 
 				raycaster = new THREE.Raycaster();
 
