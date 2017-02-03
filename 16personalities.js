@@ -65,7 +65,7 @@ const states = {
     },
     ESFP: {
       A: 5.67,
-      T: null
+      T: 2.76
     }
   },
   OK: {
@@ -104,7 +104,7 @@ const states = {
     },
     ISTJ: {
       A: 3.9,
-      T: null //fix
+      T: 1.24
     },
     ISFJ: {
       A: 6.54,
@@ -132,7 +132,7 @@ const states = {
     },
     ESFP: {
       A: 5.76,
-      T: null
+      T: 2.75
     }
   }, 
   KS: {
@@ -199,7 +199,7 @@ const states = {
     },
     ESFP: {
       A: 5.96,
-      T: null
+      T: 2.78
     }
   },
   NE: {
@@ -266,7 +266,7 @@ const states = {
     },
     ESFP: {
       A: 6.17,
-      T: null
+      T: 3.06
     }
   },
   SD: {
@@ -333,7 +333,7 @@ const states = {
     },
     ESFP: {
       A: 5.64,
-      T: null
+      T: 2.33
     }
   },
   ND: {
@@ -400,7 +400,7 @@ const states = {
     },
     ESFP: {
       A: 6.43,
-      T: null
+      T: 3.02
     }
   },
   NM: {
@@ -467,7 +467,7 @@ const states = {
     },
     ESFP: {
       A: 5.72,
-      T: null
+      T: 2.53
     }
   },
   CO: {
@@ -534,7 +534,7 @@ const states = {
     },
     ESFP: {
       A: 6.29,
-      T: null
+      T: 2.64
     }
   },
   UT: {
@@ -601,7 +601,7 @@ const states = {
     },
     ESFP: {
       A: 6.57,
-      T: null
+      T: 3.29
     }
   },
   AZ: {
@@ -668,7 +668,7 @@ const states = {
     },
     ESFP: {
       A: 5.59,
-      T: null
+      T: 2.68
     }
   },
   WY: {
@@ -735,7 +735,7 @@ const states = {
     },
     ESFP: {
       A: 6.56,
-      T: null
+      T: 2.85
     }
   },
   ID: {
@@ -802,7 +802,7 @@ const states = {
     },
     ESFP: {
       A: 6.53,
-      T: null
+      T: 2.89
     }
   },
   MT: {
@@ -869,7 +869,7 @@ const states = {
     },
     ESFP: {
       A: 6.04,
-      T: null
+      T: 2.91
     }
   },
   NV: {
@@ -936,7 +936,7 @@ const states = {
     },
     ESFP: {
       A: 5.25,
-      T: null
+      T: 2.5
     }
   },
   OR: {
@@ -1003,7 +1003,7 @@ const states = {
     },
     ESFP: {
       A: 6.27,
-      T: null
+      T: 3.02
     }
   },
   WI: {
@@ -1070,7 +1070,7 @@ const states = {
     },
     ESFP: {
       A: 6.08,
-      T: null
+      T: 3.09
     }
   },
   WA: {
@@ -1137,7 +1137,7 @@ const states = {
     },
     ESFP: {
       A: 6.15,
-      T: null
+      T: 3.01
     }
   },
   CA: {
@@ -1204,7 +1204,7 @@ const states = {
     },
     ESFP: {
       A: 5.96,
-      T: null
+      T: 2.94
     }
   },
   MN: {
@@ -1271,7 +1271,7 @@ const states = {
     },
     ESFP: {
       A: 6.69,
-      T: null
+      T: 3.25
     }
   },
   IA: {
@@ -1338,7 +1338,7 @@ const states = {
     },
     ESFP: {
       A: 6.08,
-      T: null
+      T: 3.26
     }
   },
   MO: {
@@ -1405,7 +1405,7 @@ const states = {
     },
     ESFP: {
       A: 5.69,
-      T: null
+      T: 3.03
     }
   },
   AR: {
@@ -1472,7 +1472,7 @@ const states = {
     },
     ESFP: {
       A: 5.78,
-      T: null
+      T: 2.55
     }
   },
   LA: {
@@ -1539,7 +1539,7 @@ const states = {
     },
     ESFP: {
       A: 5.44,
-      T: null
+      T: 2.82
     }
   },
   MI: {
@@ -1606,7 +1606,7 @@ const states = {
     },
     ESFP: {
       A: 5.73,
-      T: null
+      T: 2.95
     }
   },
   IL: {
@@ -1673,7 +1673,7 @@ const states = {
     },
     ESFP: {
       A: 5.91,
-      T: null
+      T: 3.17
     }
   },
 
@@ -1741,7 +1741,7 @@ const states = {
     },
     ESFP: {
       A: 5.8,
-      T: null
+      T: 3.06
     }
   },
   OH: {
@@ -1803,12 +1803,12 @@ const states = {
       T: 0.93
     },
     ESTP: {
-      A: null, //FIXME
-      T: null //FIXME
+      A: 2.72,
+      T: 0.93
     },
     ESFP: {
       A: 5.49,
-      T: null
+      T: 3.02
     }
   },
   KY: {
@@ -1875,7 +1875,7 @@ const states = {
     },
     ESFP: {
       A: 5.42,
-      T: null
+      T: 2.93
     }
   },
   TN: {
@@ -1942,7 +1942,7 @@ const states = {
     },
     ESFP: {
       A: 5.84,
-      T: null
+      T: 2.83
     }
   },
   MS: {
@@ -2009,7 +2009,7 @@ const states = {
     },
     ESFP: {
       A: 6,
-      T: null
+      T: 2.73
     }
   },
   AL: {
@@ -2076,7 +2076,7 @@ const states = {
     },
     ESFP: {
       A: 5.68,
-      T: null
+      T: 2.96
     }
   },
   FL: {
@@ -2143,7 +2143,7 @@ const states = {
     },
     ESFP: {
       A: 5.44,
-      T: null
+      T: 2.44
     }
   },
   GA: {
@@ -2210,7 +2210,7 @@ const states = {
     },
     ESFP: {
       A: 5.58,
-      T: null
+      T: 2.68
     }
   },
   SC: {
@@ -2277,7 +2277,7 @@ const states = {
     },
     ESFP: {
       A: 5.84,
-      T: null
+      T: 2.84
     }
   },
   NC: {
@@ -2344,7 +2344,7 @@ const states = {
     },
     ESFP: {
       A: 5.65,
-      T: null
+      T: 2.79
     }
   },
   VA: {
@@ -2411,7 +2411,7 @@ const states = {
     },
     ESFP: {
       A: 5.54,
-      T: null
+      T: 2.87
     }
   },
   WV: {
@@ -2478,7 +2478,7 @@ const states = {
     },
     ESFP: {
       A: 4.78,
-      T: null
+      T: 2.68
     }
   },
   MD: {
@@ -2545,7 +2545,7 @@ const states = {
     },
     ESFP: {
       A: 5.52,
-      T: null
+      T: 2.84
     }
   },
   NJ: {
@@ -2612,7 +2612,7 @@ const states = {
     },
     ESFP: {
       A: 5.54,
-      T: null
+      T: 2.98
     }
   },
   PA: {
@@ -2679,7 +2679,7 @@ const states = {
     },
     ESFP: {
       A: 5.56,
-      T: null
+      T: 3.09
     }
   },
   NY: {
@@ -2746,7 +2746,7 @@ const states = {
     },
     ESFP: {
       A: 5.66,
-      T: null
+      T: 2.94
     }
   },
   CT: {
@@ -2813,7 +2813,7 @@ const states = {
     },
     ESFP: {
       A: 5.74,
-      T: null
+      T: 3.01
     }
   },
   RI: {
@@ -2880,7 +2880,7 @@ const states = {
     },
     ESFP: {
       A: 5.25,
-      T: null
+      T: 3.04
     }
   },
   MA: {
@@ -2947,7 +2947,7 @@ const states = {
     },
     ESFP: {
       A: 5.88,
-      T: null
+      T: 3.27
     }
   },
   VT: {
@@ -3014,7 +3014,7 @@ const states = {
     },
     ESFP: {
       A: 5.79,
-      T: null
+      T: 2.97
     }
   },
   NH: {
@@ -3081,7 +3081,7 @@ const states = {
     },
     ESFP: {
       A: 5.46,
-      T: null
+      T: 2.91
     }
   },
   ME: {
@@ -3148,7 +3148,7 @@ const states = {
     },
     ESFP: {
       A: 5.56,
-      T: null
+      T: 2.72
     }
   },
   AK: {
@@ -3215,7 +3215,7 @@ const states = {
     },
     ESFP: {
       A: 6.14,
-      T: null
+      T: 2.5
     }
   },
   HI: {
@@ -3282,7 +3282,7 @@ const states = {
     },
     ESFP: {
       A: 6.73,
-      T: null
+      T: 2.94
     }
   },
   DE: {
@@ -3349,7 +3349,7 @@ const states = {
     },
     ESFP: {
       A: 5.51,
-      T: null
+      T: 3.09
     }
   }
 }
