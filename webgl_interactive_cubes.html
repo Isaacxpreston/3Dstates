@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<style>
+			.test {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				z-index: 100;
+			}
+
+			.test:hover {
+				background: red;
+			}
+		</style>
 	</head>
 	<body>
-
+		
 		<script src="/node_modules/three/build/three.js"></script>
 		<script src="d3-threeD.js"></script>
 		<script src="16personalities.js"></script>
@@ -19,8 +31,17 @@
 			init();
 			animate();
 
-			function init() {
+			function init(personality) {
 				container = document.createElement( 'div' );
+				container.className = "container"
+				function removeElementsByClass(className){
+						var elements = document.getElementsByClassName(className);
+						while(elements.length > 0){
+								elements[0].parentNode.removeChild(elements[0]);
+						}
+				}
+
+				removeElementsByClass("container")
 				document.body.appendChild( container );
 
 				camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 1, 10000 );
@@ -56,14 +77,9 @@
 				const createMesh = (path, name, personality) => { //params
 
 						let max = getMax(personality)
-						let percent = ((percentOfState(name, personality) / max) * 100).toFixed() /1.5
-						console.log(name, percent)
-
-						//METHOD TWO -UNWEIGHTED
-						//TODO -- create external method to set max of all percentOfStates first, then add them to the scene
-						//percentOfState / currentMax = one of the colors - between 0 and 100% (ie 15 / 15 * 100)
-
-						var meshMaterial = new THREE.MeshLambertMaterial( { color: "rgb("+ percent + "%, " + percent + "%, " + percent + "%)" } ) //add parameter here
+						let percent = (((percentOfState(name, personality) / max) * (percentOfState(name, personality) / max)* (percentOfState(name, personality) / max)* (percentOfState(name, personality) / max)* (percentOfState(name, personality) / max)) * 100).toFixed()
+						console.log(percent)
+						var meshMaterial = new THREE.MeshLambertMaterial( { color: "rgb("+ percent +"%, 0%, 0%)" } ) //add parameter here
 						var mesh = new THREE.Mesh(path, meshMaterial);
 						mesh.scale.z = 10 //add parameter here 	
 						scene.add(mesh)
@@ -74,10 +90,18 @@
 					bevelThickness: 2,
 				};
 
-				statePaths.forEach((state) => {
-					let path = new THREE.ExtrudeGeometry(transformSVGPathExposed(state.path), options)
-					createMesh(path, state.name, "ISFJ")
-				})
+				const renderStates = (personality) => {
+					statePaths.forEach((state) => {
+						let path = new THREE.ExtrudeGeometry(transformSVGPathExposed(state.path), options)
+						createMesh(path, state.name, personality)
+					})
+				}
+
+				if(personality) {
+					renderStates(personality)
+				} else {
+					renderStates("ENFP")
+				}
 
 				////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -151,6 +175,7 @@
 			}
 
 		</script>
+		<div class="test" onClick="init('INFJ')">HEY TEST</div>
 
 	</body>
 </html>
