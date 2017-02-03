@@ -53,18 +53,18 @@ const states = {
     },
     ISTP: {
       A: 2.25,
-      T: null
+      T: 1.55
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.49,
+      T: 3.95
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 3.09,
+      T: 0.99
     },
     ESFP: {
-      A: null,
+      A: 5.67,
       T: null
     }
   },
@@ -120,18 +120,18 @@ const states = {
     },
     ISTP: {
       A: 2.33,
-      T: null
+      T: 1.55
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.84,
+      T: 4.54
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.83,
+      T: 0.9
     },
     ESFP: {
-      A: null,
+      A: 5.76,
       T: null
     }
   }, 
@@ -187,18 +187,18 @@ const states = {
     },
     ISTP: {
       A: 2.26,
-      T: null
+      T: 1.43
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.66,
+      T: 4.44
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.64,
+      T: 0.87
     },
     ESFP: {
-      A: null,
+      A: 5.96,
       T: null
     }
   },
@@ -254,18 +254,18 @@ const states = {
     },
     ISTP: {
       A: 2.06,
-      T: null
+      T: 1.39
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.81,
+      T: 4.48
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.73,
+      T: 0.97
     },
     ESFP: {
-      A: null,
+      A: 6.17,
       T: null
     }
   },
@@ -321,18 +321,18 @@ const states = {
     },
     ISTP: {
       A: 2.09,
-      T: null
+      T: 1.48
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 4.06,
+      T: 4.95
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.87,
+      T: 0.8
     },
     ESFP: {
-      A: null,
+      A: 5.64,
       T: null
     }
   },
@@ -388,18 +388,18 @@ const states = {
     },
     ISTP: {
       A: 2.46,
-      T: null
+      T: 1.48
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 4.01,
+      T: 4.68
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 3.02,
+      T: 0.69
     },
     ESFP: {
-      A: null,
+      A: 6.43,
       T: null
     }
   },
@@ -455,18 +455,18 @@ const states = {
     },
     ISTP: {
       A: 2.39,
-      T: null
+      T: 1.67
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 4.12,
+      T: 3.97
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.95,
+      T: 0.88
     },
     ESFP: {
-      A: null,
+      A: 5.72,
       T: null
     }
   },
@@ -522,18 +522,18 @@ const states = {
     },
     ISTP: {
       A: 2.26,
-      T: null
+      T: 1.34
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.7,
+      T: 3.95
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.98,
+      T: 0.85
     },
     ESFP: {
-      A: null,
+      A: 6.29,
       T: null
     }
   },
@@ -589,18 +589,18 @@ const states = {
     },
     ISTP: {
       A: 1.86,
-      T: null
+      T: 1.16
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.99,
+      T: 4.56
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.34,
+      T: 0.76
     },
     ESFP: {
-      A: null,
+      A: 6.57,
       T: null
     }
   },
@@ -656,18 +656,18 @@ const states = {
     },
     ISTP: {
       A: 2.22,
-      T: null
+      T: 1.53
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.47,
+      T: 3.98
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.86,
+      T: 0.94
     },
     ESFP: {
-      A: null,
+      A: 5.59,
       T: null
     }
   },
@@ -723,18 +723,18 @@ const states = {
     },
     ISTP: {
       A: 2.39,
-      T: null
+      T: 1.72
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 4.42,
+      T: 4.63
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.51,
+      T: 0.69
     },
     ESFP: {
-      A: null,
+      A: 6.56,
       T: null
     }
   },
@@ -790,18 +790,18 @@ const states = {
     },
     ISTP: {
       A: 2.18,
-      T: null
+      T: 1.28
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 4.21,
+      T: 4.68
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.5,
+      T: 0.8
     },
     ESFP: {
-      A: null,
+      A: 6.53,
       T: null
     }
   },
@@ -857,18 +857,18 @@ const states = {
     },
     ISTP: {
       A: 2.37,
-      T: null
+      T: 1.77
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 4.33,
+      T: 4.93
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.77,
+      T: 0.73
     },
     ESFP: {
-      A: null,
+      A: 6.04,
       T: null
     }
   },
@@ -924,18 +924,18 @@ const states = {
     },
     ISTP: {
       A: 2.33,
-      T: null
+      T: 1.71
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.4,
+      T: 4.13
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.81,
+      T: 1.03
     },
     ESFP: {
-      A: null,
+      A: 5.25,
       T: null
     }
   },
@@ -991,18 +991,18 @@ const states = {
     },
     ISTP: {
       A: 2.34,
-      T: null
+      T: 1.63
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 4.25,
+      T: 4.81
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.61,
+      T: 0.89
     },
     ESFP: {
-      A: null,
+      A: 6.27,
       T: null
     }
   },
@@ -1058,18 +1058,18 @@ const states = {
     },
     ISTP: {
       A: 2.44,
-      T: null
+      T: 1.64
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.92,
+      T: 4.7
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.85,
+      T: 1
     },
     ESFP: {
-      A: null,
+      A: 6.08,
       T: null
     }
   },
@@ -1125,18 +1125,18 @@ const states = {
     },
     ISTP: {
       A: 2.37,
-      T: null
+      T: 1.6
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 4.16,
+      T: 4.48
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.75,
+      T: 0.9
     },
     ESFP: {
-      A: null,
+      A: 6.15,
       T: null
     }
   },
@@ -1192,18 +1192,18 @@ const states = {
     },
     ISTP: {
       A: 2.26,
-      T: null
+      T: 1.61
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.61,
+      T: 4.12
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.94,
+      T: 1.05
     },
     ESFP: {
-      A: null,
+      A: 5.96,
       T: null
     }
   },
@@ -1259,18 +1259,18 @@ const states = {
     },
     ISTP: {
       A: 2.16,
-      T: null
+      T: 1.38
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 4.03,
+      T: 4.63
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.67,
+      T: 0.9
     },
     ESFP: {
-      A: null,
+      A: 6.69,
       T: null
     }
   },
@@ -1326,18 +1326,18 @@ const states = {
     },
     ISTP: {
       A: 2.25,
-      T: null
+      T: 1.53
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.93,
+      T: 4.91
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.72,
+      T: 0.89 
     },
     ESFP: {
-      A: null,
+      A: 6.08,
       T: null
     }
   },
@@ -1393,18 +1393,18 @@ const states = {
     },
     ISTP: {
       A: 2.11,
-      T: null
+      T: 1.47
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.63,
+      T: 4.36
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.76,
+      T: 0.95
     },
     ESFP: {
-      A: null,
+      A: 5.69,
       T: null
     }
   },
@@ -1460,18 +1460,18 @@ const states = {
     },
     ISTP: {
       A: 2.18,
-      T: null
+      T: 1.51
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.77,
+      T: 4.31
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.96,
+      T: 0.84
     },
     ESFP: {
-      A: null,
+      A: 5.78,
       T: null
     }
   },
@@ -1527,18 +1527,18 @@ const states = {
     },
     ISTP: {
       A: 2.12,
-      T: null
+      T: 1.5
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.41,
+      T: 4.01
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.93,
+      T: 1.04
     },
     ESFP: {
-      A: null,
+      A: 5.44,
       T: null
     }
   },
@@ -1594,18 +1594,18 @@ const states = {
     },
     ISTP: {
       A: 2.03,
-      T: null
+      T: 1.6
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.59,
+      T: 4.6
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.68,
+      T: 0.95
     },
     ESFP: {
-      A: null,
+      A: 5.73,
       T: null
     }
   },
@@ -1661,18 +1661,18 @@ const states = {
     },
     ISTP: {
       A: 2.08,
-      T: null
+      T: 1.52
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.21,
+      T: 4.2
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.97,
+      T: 0.97
     },
     ESFP: {
-      A: null,
+      A: 5.91,
       T: null
     }
   },
@@ -1729,18 +1729,18 @@ const states = {
     },
     ISTP: {
       A: 2.04,
-      T: null
+      T: 1.46
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.52,
+      T: 4.35
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.78,
+      T: 0.99
     },
     ESFP: {
-      A: null,
+      A: 5.8,
       T: null
     }
   },
@@ -1796,18 +1796,18 @@ const states = {
     },
     ISTP: {
       A: 2.18,
-      T: null
+      T: 1.58
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.51,
+      T: 0.93
     },
     ESTP: {
-      A: null,
-      T: null
+      A: null, //FIXME
+      T: null //FIXME
     },
     ESFP: {
-      A: null,
+      A: 5.49,
       T: null
     }
   },
@@ -1863,18 +1863,18 @@ const states = {
     },
     ISTP: {
       A: 2.14,
-      T: null
+      T: 1.69
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.34,
+      T: 4.74
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.67,
+      T: 1.01
     },
     ESFP: {
-      A: null,
+      A: 5.42,
       T: null
     }
   },
@@ -1930,18 +1930,18 @@ const states = {
     },
     ISTP: {
       A: 2.08,
-      T: null
+      T: 1.46
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.48,
+      T: 4.04
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.91,
+      T: 0.95
     },
     ESFP: {
-      A: null,
+      A: 5.84,
       T: null
     }
   },
@@ -1997,18 +1997,18 @@ const states = {
     },
     ISTP: {
       A: 2.18,
-      T: null
+      T: 1.38
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.29,
+      T: 3.72
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 3.41,
+      T: 1.06
     },
     ESFP: {
-      A: null,
+      A: 6,
       T: null
     }
   },
@@ -2064,18 +2064,18 @@ const states = {
     },
     ISTP: {
       A: 2.18,
-      T: null
+      T: 1.51
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.38,
+      T: 4.09
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 3.07,
+      T: 0.96
     },
     ESFP: {
-      A: null,
+      A: 5.68,
       T: null
     }
   },
@@ -2131,18 +2131,18 @@ const states = {
     },
     ISTP: {
       A: 2.12,
-      T: null
+      T: 1.53
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.26,
+      T: 3.79
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 3.06,
+      T: 0.96
     },
     ESFP: {
-      A: null,
+      A: 5.44,
       T: null
     }
   },
@@ -2198,18 +2198,18 @@ const states = {
     },
     ISTP: {
       A: 2.25,
-      T: null
+      T: 1.49
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.33,
+      T: 3.81
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.97,
+      T: 0.97
     },
     ESFP: {
-      A: null,
+      A: 5.58,
       T: null
     }
   },
@@ -2265,18 +2265,18 @@ const states = {
     },
     ISTP: {
       A: 2.08,
-      T: null
+      T: 1.43
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.24,
+      T: 4.02
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.89,
+      T: 0.94
     },
     ESFP: {
-      A: null,
+      A: 5.84,
       T: null
     }
   },
@@ -2332,18 +2332,18 @@ const states = {
     },
     ISTP: {
       A: 2.23,
-      T: null
+      T: 1.51
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.38,
+      T: 4.18
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 3,
+      T: 0.92
     },
     ESFP: {
-      A: null,
+      A: 5.65,
       T: null
     }
   },
@@ -2399,18 +2399,18 @@ const states = {
     },
     ISTP: {
       A: 2.38,
-      T: null
+      T: 1.59
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.51,
+      T: 4.2
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 3.07,
+      T: 1.01
     },
     ESFP: {
-      A: null,
+      A: 5.54,
       T: null
     }
   },
@@ -2466,18 +2466,18 @@ const states = {
     },
     ISTP: {
       A: 2.31,
-      T: null
+      T: 1.73
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.54,
+      T: 5.25
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.47,
+      T: 0.97
     },
     ESFP: {
-      A: null,
+      A: 4.78,
       T: null
     }
   },
@@ -2533,18 +2533,18 @@ const states = {
     },
     ISTP: {
       A: 2.26,
-      T: null
+      T: 1.63
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.44,
+      T: 4.14
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 3.08,
+      T: 1.01
     },
     ESFP: {
-      A: null,
+      A: 5.52,
       T: null
     }
   },
@@ -2600,18 +2600,18 @@ const states = {
     },
     ISTP: {
       A: 2.04,
-      T: null
+      T: 1.94
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.19,
+      T: 4.29
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.92,
+      T: 1.07
     },
     ESFP: {
-      A: null,
+      A: 5.54,
       T: null
     }
   },
@@ -2667,18 +2667,18 @@ const states = {
     },
     ISTP: {
       A: 2.04,
-      T: null
+      T: 1.67
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.29,
+      T: 4.5
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.7,
+      T: 1.07
     },
     ESFP: {
-      A: null,
+      A: 5.56,
       T: null
     }
   },
@@ -2734,18 +2734,18 @@ const states = {
     },
     ISTP: {
       A: 1.99,
-      T: null
+      T: 1.71
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.15,
+      T: 4.13
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 3.01,
+      T: 1.14
     },
     ESFP: {
-      A: null,
+      A: 5.66,
       T: null
     }
   },
@@ -2801,18 +2801,18 @@ const states = {
     },
     ISTP: {
       A: 2.1,
-      T: null
+      T: 1.56
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.07,
+      T: 4.21
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.8,
+      T: 1.01
     },
     ESFP: {
-      A: null,
+      A: 5.74,
       T: null
     }
   },
@@ -2868,18 +2868,18 @@ const states = {
     },
     ISTP: {
       A: 2.02,
-      T: null
+      T: 1.66
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.17,
+      T: 4.84
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.83,
+      T: 1.04
     },
     ESFP: {
-      A: null,
+      A: 5.25,
       T: null
     }
   },
@@ -2935,18 +2935,18 @@ const states = {
     },
     ISTP: {
       A: 1.97,
-      T: null
+      T: 1.66
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.41,
+      T: 4.44
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.77,
+      T: 1.07
     },
     ESFP: {
-      A: null,
+      A: 5.88,
       T: null
     }
   },
@@ -3002,18 +3002,18 @@ const states = {
     },
     ISTP: {
       A: 2.19,
-      T: null
+      T: 1.72
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 4,
+      T: 5.19
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.31,
+      T: 0.94
     },
     ESFP: {
-      A: null,
+      A: 5.79,
       T: null
     }
   },
@@ -3069,18 +3069,18 @@ const states = {
     },
     ISTP: {
       A: 2.35,
-      T: null
+      T: 1.68
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.78,
+      T: 4.84
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.58,
+      T: 0.87
     },
     ESFP: {
-      A: null,
+      A: 5.46,
       T: null
     }
   },
@@ -3136,18 +3136,18 @@ const states = {
     },
     ISTP: {
       A: 2.03,
-      T: null
+      T: 1.86
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 4.32,
+      T: 5.37
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.6,
+      T: 0.92
     },
     ESFP: {
-      A: null,
+      A: 5.56,
       T: null
     }
   },
@@ -3203,18 +3203,18 @@ const states = {
     },
     ISTP: {
       A: 3,
-      T: null
+      T: 1.57
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 4.81,
+      T: 5.15
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.9,
+      T: 0.88
     },
     ESFP: {
-      A: null,
+      A: 6.14,
       T: null
     }
   },
@@ -3270,18 +3270,18 @@ const states = {
     },
     ISTP: {
       A: 2.11,
-      T: null
+      T: 1.26
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 4.28,
+      T: 4.63
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 2.62,
+      T: 0.84
     },
     ESFP: {
-      A: null,
+      A: 6.73,
       T: null
     }
   },
@@ -3337,18 +3337,18 @@ const states = {
     },
     ISTP: {
       A: 2.29,
-      T: null
+      T: 1.7
     },
     ISFP: {
-      A: null,
-      T: null
+      A: 3.36,
+      T: 4.46
     },
     ESTP: {
-      A: null,
-      T: null
+      A: 3.18,
+      T: 0.98
     },
     ESFP: {
-      A: null,
+      A: 5.51,
       T: null
     }
   }
