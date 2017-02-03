@@ -28,6 +28,10 @@
 		//MAKE ROTATING SPRITES FOR ALL THE ERSONALITY THINGIES?
 		//AND THEY WILL ROTATE WHEN YOU TYPE OR CLICK YO.
 
+		//can probably import dispatches if need e, so shouldnt be too wprried about fitting this neatly inside a react component
+		//idk, it has its own render method we can just call anywhere
+		//does it/will it need props? or will all of that functionality be external?
+
 			var container;
 			var camera, scene, raycaster, renderer;
 
@@ -92,9 +96,9 @@
 						let max = getMax(personality) - min
 						let percent = (((percentOfState(name, personality) - min) / max) * 100).toFixed()
 						// var meshMaterial = new THREE.MeshLambertMaterial( { color: "rgb("+ percent +"%, 0%, 0%)" } )
-						var meshMaterial = new THREE.MeshLambertMaterial( { color: "rgb("+ percent/2 +"%," + percent/2 + "%, " + percent/2 + "%)" } )
+						var meshMaterial = new THREE.MeshLambertMaterial( { color: "rgb("+ percent +"%," + percent + "%, " + percent + "%)" } )
 						var mesh = new THREE.Mesh(path, meshMaterial);
-						mesh.scale.z = percent / 5 //add parameter here 	
+						mesh.scale.z = (percent / 5) + 0.001 //add parameter here 	
 						scene.add(mesh)
 				}
 
