@@ -36,11 +36,11 @@ const states = {
       T: 4.4
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.85,
+      T: 2.15
     },
     ISFJ: {
-      A: null,
+      A: 5.89,
       T: null
     },
     ESTJ: {
@@ -103,11 +103,11 @@ const states = {
       T: 4.08
     },
     ISTJ: {
-      A: null,
+      A: 3.9,
       T: null
     },
     ISFJ: {
-      A: null,
+      A: 6.54,
       T: null
     },
     ESTJ: {
@@ -170,11 +170,11 @@ const states = {
       T: 4.31
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.67,
+      T: 2.13
     },
     ISFJ: {
-      A: null,
+      A: 6.73,
       T: null
     },
     ESTJ: {
@@ -237,11 +237,11 @@ const states = {
       T: 4.37
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.79,
+      T: 2.25
     },
     ISFJ: {
-      A: null,
+      A: 6.42,
       T: null
     },
     ESTJ: {
@@ -304,11 +304,11 @@ const states = {
       T: 4.07
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.37,
+      T: 2.25
     },
     ISFJ: {
-      A: null,
+      A: 6.91,
       T: null
     },
     ESTJ: {
@@ -371,11 +371,11 @@ const states = {
       T: 3.65
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.92,
+      T: 2.1
     },
     ISFJ: {
-      A: null,
+      A: 7.17,
       T: null
     },
     ESTJ: {
@@ -438,11 +438,11 @@ const states = {
       T: 3.96
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 4.09,
+      T: 2.1
     },
     ISFJ: {
-      A: null,
+      A: 6.18,
       T: null
     },
     ESTJ: {
@@ -505,11 +505,11 @@ const states = {
       T: 4.16
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 4.04,
+      T: 2.04
     },
     ISFJ: {
-      A: null,
+      A: 6.38,
       T: null
     },
     ESTJ: {
@@ -572,11 +572,11 @@ const states = {
       T: 4.72
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.09,
+      T: 1.78
     },
     ISFJ: {
-      A: null,
+      A: 6.75,
       T: null
     },
     ESTJ: {
@@ -639,11 +639,11 @@ const states = {
       T: 4.22
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.82,
+      T: 2.23
     },
     ISFJ: {
-      A: null,
+      A: 6.11,
       T: null
     },
     ESTJ: {
@@ -706,11 +706,11 @@ const states = {
       T: 3.99
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.74,
+      T: 2.25
     },
     ISFJ: {
-      A: null,
+      A: 6.57,
       T: null
     },
     ESTJ: {
@@ -773,11 +773,11 @@ const states = {
       T: 4.32
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.63,
+      T: 2.09
     },
     ISFJ: {
-      A: null,
+      A: 6.97,
       T: null
     },
     ESTJ: {
@@ -840,11 +840,11 @@ const states = {
       T: 3.82
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.86,
+      T: 2.26
     },
     ISFJ: {
-      A: null,
+      A: 7.55,
       T: null
     },
     ESTJ: {
@@ -907,11 +907,11 @@ const states = {
       T: 4.34
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.88,
+      T: 2.3
     },
     ISFJ: {
-      A: null,
+      A: 5.61,
       T: null
     },
     ESTJ: {
@@ -974,11 +974,11 @@ const states = {
       T: 4.16
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.75,
+      T: 2.19
     },
     ISFJ: {
-      A: null,
+      A: 7.1,
       T: null
     },
     ESTJ: {
@@ -1041,11 +1041,11 @@ const states = {
       T: 4.19
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.54,
+      T: 2.31
     },
     ISFJ: {
-      A: null,
+      A: 6.35,
       T: null
     },
     ESTJ: {
@@ -1108,11 +1108,11 @@ const states = {
       T: 4.18
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.84,
+      T: 2.24
     },
     ISFJ: {
-      A: null,
+      A: 6.75,
       T: null
     },
     ESTJ: {
@@ -1175,11 +1175,11 @@ const states = {
       T: 4.55
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.51,
+      T: 2.14
     },
     ISFJ: {
-      A: null,
+      A: 5.71,
       T: null
     },
     ESTJ: {
@@ -1242,11 +1242,11 @@ const states = {
       T: 4.24
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.47,
+      T: 2.17
     },
     ISFJ: {
-      A: null,
+      A: 6.86,
       T: null
     },
     ESTJ: {
@@ -1309,11 +1309,11 @@ const states = {
       T: 4.13
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.44,
+      T: 2.28
     },
     ISFJ: {
-      A: null,
+      A: 6.43,
       T: null
     },
     ESTJ: {
@@ -1376,11 +1376,11 @@ const states = {
       T: 4.37
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.58,
+      T: 2.26
     },
     ISFJ: {
-      A: null,
+      A: 6.3,
       T: null
     },
     ESTJ: {
@@ -1443,11 +1443,11 @@ const states = {
       T: 4.18
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.83,
+      T: 2.13
     },
     ISFJ: {
-      A: null,
+      A: 6.18,
       T: null
     },
     ESTJ: {
@@ -1510,11 +1510,11 @@ const states = {
       T: 4.46
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.37,
+      T: 2.26
     },
     ISFJ: {
-      A: null,
+      A: 5.84,
       T: null
     },
     ESTJ: {
@@ -1577,11 +1577,11 @@ const states = {
       T: 4.49
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.5,
+      T: 2.28
     },
     ISFJ: {
-      A: null,
+      A: 5.92,
       T: null
     },
     ESTJ: {
@@ -1644,11 +1644,11 @@ const states = {
       T: 4.61
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.44,
+      T: 2.18
     },
     ISFJ: {
-      A: null,
+      A: 5.6,
       T: null
     },
     ESTJ: {
@@ -1712,11 +1712,11 @@ const states = {
       T: 4.34
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.65,
+      T: 2.32
     },
     ISFJ: {
-      A: null,
+      A: 6.28,
       T: null
     },
     ESTJ: {
@@ -1779,11 +1779,11 @@ const states = {
       T: 4.36
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.52,
+      T: 2.38
     },
     ISFJ: {
-      A: null,
+      A: 6.05,
       T: null
     },
     ESTJ: {
@@ -1846,11 +1846,11 @@ const states = {
       T: 4.19
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.58,
+      T: 2.48
     },
     ISFJ: {
-      A: null,
+      A: 6.05,
       T: null
     },
     ESTJ: {
@@ -1913,11 +1913,11 @@ const states = {
       T: 4.13
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.85,
+      T: 2.25
     },
     ISFJ: {
-      A: null,
+      A: 6.22,
       T: null
     },
     ESTJ: {
@@ -1980,11 +1980,11 @@ const states = {
       T: 4.17
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.36,
+      T: 2.09
     },
     ISFJ: {
-      A: null,
+      A: 5.71,
       T: null
     },
     ESTJ: {
@@ -2047,11 +2047,11 @@ const states = {
       T: 4.08
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.61,
+      T: 2.22
     },
     ISFJ: {
-      A: null,
+      A: 6.03,
       T: null
     },
     ESTJ: {
@@ -2114,11 +2114,11 @@ const states = {
       T: 4.31
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.58,
+      T: 2.17
     },
     ISFJ: {
-      A: null,
+      A: 5.75,
       T: null
     },
     ESTJ: {
@@ -2181,11 +2181,11 @@ const states = {
       T: 4.29
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.83,
+      T: 2.2
     },
     ISFJ: {
-      A: null,
+      A: 5.96,
       T: null
     },
     ESTJ: {
@@ -2248,11 +2248,11 @@ const states = {
       T: 4.16
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.7,
+      T: 2.35
     },
     ISFJ: {
-      A: null,
+      A: 6.12,
       T: null
     },
     ESTJ: {
@@ -2315,11 +2315,11 @@ const states = {
       T: 4.35
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.71,
+      T: 2.16
     },
     ISFJ: {
-      A: null,
+      A: 6.18,
       T: null
     },
     ESTJ: {
@@ -2382,11 +2382,11 @@ const states = {
       T: 4.27
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 4.03,
+      T: 2.42
     },
     ISFJ: {
-      A: null,
+      A: 6.15,
       T: null
     },
     ESTJ: {
@@ -2449,11 +2449,11 @@ const states = {
       T: 4.35
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.67,
+      T: 2.59
     },
     ISFJ: {
-      A: null,
+      A: 5.39,
       T: null
     },
     ESTJ: {
@@ -2516,11 +2516,11 @@ const states = {
       T: 4.51
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.98,
+      T: 2.36
     },
     ISFJ: {
-      A: null,
+      A: 5.77,
       T: null
     },
     ESTJ: {
@@ -2583,11 +2583,11 @@ const states = {
       T: 4.78
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.36,
+      T: 2.36
     },
     ISFJ: {
-      A: null,
+      A: 5.28,
       T: null
     },
     ESTJ: {
@@ -2650,11 +2650,11 @@ const states = {
       T: 4.58
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.44,
+      T: 2.39
     },
     ISFJ: {
-      A: null,
+      A: 5.71,
       T: null
     },
     ESTJ: {
@@ -2717,11 +2717,11 @@ const states = {
       T: 4.8
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.33,
+      T: 2.31
     },
     ISFJ: {
-      A: null,
+      A: 5.3S,
       T: null
     },
     ESTJ: {
@@ -2784,11 +2784,11 @@ const states = {
       T: 4.67
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.62,
+      T: 2.39
     },
     ISFJ: {
-      A: null,
+      A: 5.48,
       T: null
     },
     ESTJ: {
@@ -2851,11 +2851,11 @@ const states = {
       T: 4.76
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.11,
+      T: 2.16
     },
     ISFJ: {
-      A: null,
+      A: 5.49,
       T: null
     },
     ESTJ: {
@@ -2918,11 +2918,11 @@ const states = {
       T: 4.77
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.3,
+      T: 2.43
     },
     ISFJ: {
-      A: null,
+      A: 5.74,
       T: null
     },
     ESTJ: {
@@ -2985,11 +2985,11 @@ const states = {
       T: 4.32
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.39,
+      T: 2.15
     },
     ISFJ: {
-      A: null,
+      A: 6.76,
       T: null
     },
     ESTJ: {
@@ -3052,11 +3052,11 @@ const states = {
       T: 4.57
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.48,
+      T: 2.3
     },
     ISFJ: {
-      A: null,
+      A: 5.99,
       T: null
     },
     ESTJ: {
@@ -3119,11 +3119,11 @@ const states = {
       T: 4.21
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.15,
+      T: 2.61
     },
     ISFJ: {
-      A: null,
+      A: 6.04,
       T: null
     },
     ESTJ: {
@@ -3186,11 +3186,11 @@ const states = {
       T: 3.69
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 4.48,
+      T: 2.51
     },
     ISFJ: {
-      A: null,
+      A: 6.47,
       T: null
     },
     ESTJ: {
@@ -3253,11 +3253,11 @@ const states = {
       T: 4.32
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.64,
+      T: 1.88
     },
     ISFJ: {
-      A: null,
+      A: 6.95,
       T: null
     },
     ESTJ: {
@@ -3320,11 +3320,11 @@ const states = {
       T: 4.38
     },
     ISTJ: {
-      A: null,
-      T: null
+      A: 3.57,
+      T: 2.3
     },
     ISFJ: {
-      A: null,
+      A: 5.67,
       T: null
     },
     ESTJ: {
