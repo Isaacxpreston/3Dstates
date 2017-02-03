@@ -32,8 +32,8 @@ const states = {
       T: 2.01
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.58,
+      T: 4.4
     },
     ISTJ: {
       A: null,
@@ -99,8 +99,8 @@ const states = {
       T: 1.88
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.11,
+      T: 4.08
     },
     ISTJ: {
       A: null,
@@ -166,8 +166,8 @@ const states = {
       T: 1.95
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.26,
+      T: 4.31
     },
     ISTJ: {
       A: null,
@@ -233,8 +233,8 @@ const states = {
       T: 1.89
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.35,
+      T: 4.37
     },
     ISTJ: {
       A: null,
@@ -300,8 +300,8 @@ const states = {
       T: 1.73
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.31,
+      T: 4.07
     },
     ISTJ: {
       A: null,
@@ -367,8 +367,8 @@ const states = {
       T: 1.95
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.4,
+      T: 3.65
     },
     ISTJ: {
       A: null,
@@ -434,8 +434,8 @@ const states = {
       T: 1.81
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.78,
+      T: 3.96
     },
     ISTJ: {
       A: null,
@@ -501,8 +501,8 @@ const states = {
       T: 1.81
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 5,
+      T: 4.16
     },
     ISTJ: {
       A: null,
@@ -568,8 +568,8 @@ const states = {
       T: 2.21
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.87,
+      T: 4.72
     },
     ISTJ: {
       A: null,
@@ -635,8 +635,8 @@ const states = {
       T: 1.95
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.68,
+      T: 4.22
     },
     ISTJ: {
       A: null,
@@ -702,8 +702,8 @@ const states = {
       T: 1.65
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.1,
+      T: 3.99
     },
     ISTJ: {
       A: null,
@@ -769,8 +769,8 @@ const states = {
       T: 1.71
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.58,
+      T: 4.32
     },
     ISTJ: {
       A: null,
@@ -836,8 +836,8 @@ const states = {
       T: 1.37
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.3,
+      T: 3.82
     },
     ISTJ: {
       A: null,
@@ -903,8 +903,8 @@ const states = {
       T: 2
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.47,
+      T: 4.34
     },
     ISTJ: {
       A: null,
@@ -970,8 +970,8 @@ const states = {
       T: 1.74
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.34,
+      T: 4.16
     },
     ISTJ: {
       A: null,
@@ -1037,8 +1037,8 @@ const states = {
       T: 1.87
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.18,
+      T: 4.19
     },
     ISTJ: {
       A: null,
@@ -1104,8 +1104,8 @@ const states = {
       T: 1.79
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.49,
+      T: 4.18
     },
     ISTJ: {
       A: null,
@@ -1171,8 +1171,8 @@ const states = {
       T: 2.13
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.8,
+      T: 4.55
     },
     ISTJ: {
       A: null,
@@ -1238,8 +1238,8 @@ const states = {
       T: 1.78
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.49,
+      T: 4.24
     },
     ISTJ: {
       A: null,
@@ -1305,8 +1305,8 @@ const states = {
       T: 1.96
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 3.99,
+      T: 4.13
     },
     ISTJ: {
       A: null,
@@ -1372,8 +1372,8 @@ const states = {
       T: 1.96
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.26,
+      T: 4.37
     },
     ISTJ: {
       A: null,
@@ -1439,8 +1439,8 @@ const states = {
       T: 2.02
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 3.93,
+      T: 4.18
     },
     ISTJ: {
       A: null,
@@ -1506,8 +1506,8 @@ const states = {
       T: 2.06
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.24,
+      T: 4.46
     },
     ISTJ: {
       A: null,
@@ -1573,8 +1573,8 @@ const states = {
       T: 2.07
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.38,
+      T: 4.49
     },
     ISTJ: {
       A: null,
@@ -1640,8 +1640,8 @@ const states = {
       T: 2.08
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.47,
+      T: 4.61
     },
     ISTJ: {
       A: null,
@@ -1708,8 +1708,8 @@ const states = {
       T: 2.09
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.01,
+      T: 4.34
     },
     ISTJ: {
       A: null,
@@ -1775,8 +1775,8 @@ const states = {
       T: 2.08
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.16,
+      T: 4.36
     },
     ISTJ: {
       A: null,
@@ -1842,8 +1842,8 @@ const states = {
       T: 2.08
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 3.98,
+      T: 4.19
     },
     ISTJ: {
       A: null,
@@ -1909,8 +1909,8 @@ const states = {
       T: 1.95
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.15,
+      T: 4.13
     },
     ISTJ: {
       A: null,
@@ -1976,8 +1976,8 @@ const states = {
       T: 2.35
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.19,
+      T: 4.17
     },
     ISTJ: {
       A: null,
@@ -2043,8 +2043,8 @@ const states = {
       T: 2.14
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.04,
+      T: 4.08
     },
     ISTJ: {
       A: null,
@@ -2110,8 +2110,8 @@ const states = {
       T: 2.1
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.66,
+      T: 4.31
     },
     ISTJ: {
       A: null,
@@ -2177,8 +2177,8 @@ const states = {
       T: 2.01
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.41,
+      T: 4.29
     },
     ISTJ: {
       A: null,
@@ -2244,8 +2244,8 @@ const states = {
       T: 2.15
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.26,
+      T: 4.16
     },
     ISTJ: {
       A: null,
@@ -2311,8 +2311,8 @@ const states = {
       T: 1.94
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.29,
+      T: 4.35
     },
     ISTJ: {
       A: null,
@@ -2378,8 +2378,8 @@ const states = {
       T: 1.86
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.17,
+      T: 4.27
     },
     ISTJ: {
       A: null,
@@ -2445,8 +2445,8 @@ const states = {
       T: 1.83
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 3.83,
+      T: 4.35
     },
     ISTJ: {
       A: null,
@@ -2512,8 +2512,8 @@ const states = {
       T: 1.98
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.5,
+      T: 4.51
     },
     ISTJ: {
       A: null,
@@ -2579,8 +2579,8 @@ const states = {
       T: 2.23
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.36,
+      T: 4.78
     },
     ISTJ: {
       A: null,
@@ -2646,8 +2646,8 @@ const states = {
       T: 2.09
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.23,
+      T: 4.58
     },
     ISTJ: {
       A: null,
@@ -2713,8 +2713,8 @@ const states = {
       T: 2.24
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.56,
+      T: 4.8
     },
     ISTJ: {
       A: null,
@@ -2780,8 +2780,8 @@ const states = {
       T: 2.14
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.2,
+      T: 4.67
     },
     ISTJ: {
       A: null,
@@ -2847,8 +2847,8 @@ const states = {
       T: 2.08
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.6,
+      T: 4.76
     },
     ISTJ: {
       A: null,
@@ -2914,8 +2914,8 @@ const states = {
       T: 2.04
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.41,
+      T: 4.77
     },
     ISTJ: {
       A: null,
@@ -2981,8 +2981,8 @@ const states = {
       T: 1.74
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.56,
+      T: 4.32
     },
     ISTJ: {
       A: null,
@@ -3048,8 +3048,8 @@ const states = {
       T: 1.91
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.3,
+      T: 4.57
     },
     ISTJ: {
       A: null,
@@ -3115,8 +3115,8 @@ const states = {
       T: 1.87
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 3.85,
+      T: 4.21
     },
     ISTJ: {
       A: null,
@@ -3182,8 +3182,8 @@ const states = {
       T: 1.42
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.5,
+      T: 3.69
     },
     ISTJ: {
       A: null,
@@ -3249,8 +3249,8 @@ const states = {
       T: 2.01
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 5.29,
+      T: 4.32
     },
     ISTJ: {
       A: null,
@@ -3316,8 +3316,8 @@ const states = {
       T: 1.74
     },
     ENFP: {
-      A: null,
-      T: null
+      A: 4.13,
+      T: 4.38
     },
     ISTJ: {
       A: null,
