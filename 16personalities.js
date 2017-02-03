@@ -28,8 +28,8 @@ const states = {
       T: 5.79
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2.3,
+      T: 2.01
     },
     ENFP: {
       A: null,
@@ -95,8 +95,8 @@ const states = {
       T: 6.27
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2.06,
+      T: 1.88
     },
     ENFP: {
       A: null,
@@ -162,8 +162,8 @@ const states = {
       T: 5.97
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2.07,
+      T: 1.95
     },
     ENFP: {
       A: null,
@@ -229,8 +229,8 @@ const states = {
       T: 6.19
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 1.98,
+      T: 1.89
     },
     ENFP: {
       A: null,
@@ -296,8 +296,8 @@ const states = {
       T: 6.19
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 1.77,
+      T: 1.73
     },
     ENFP: {
       A: null,
@@ -363,8 +363,8 @@ const states = {
       T: 6.3
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 1.58,
+      T: 1.95
     },
     ENFP: {
       A: null,
@@ -430,8 +430,8 @@ const states = {
       T: 6.33
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2.32,
+      T: 1.81
     },
     ENFP: {
       A: null,
@@ -497,8 +497,8 @@ const states = {
       T: 5.55
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2.25,
+      T: 1.81
     },
     ENFP: {
       A: null,
@@ -564,8 +564,8 @@ const states = {
       T: 5.57
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2.48,
+      T: 2.21
     },
     ENFP: {
       A: null,
@@ -631,8 +631,8 @@ const states = {
       T: 5.86
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2.43,
+      T: 1.95
     },
     ENFP: {
       A: null,
@@ -698,8 +698,8 @@ const states = {
       T: 5.64
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2.08,
+      T: 1.65
     },
     ENFP: {
       A: null,
@@ -765,8 +765,8 @@ const states = {
       T: 5.93
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2.1,
+      T: 1.71
     },
     ENFP: {
       A: null,
@@ -832,8 +832,8 @@ const states = {
       T: 5.98
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2.1,
+      T: 1.37
     },
     ENFP: {
       A: null,
@@ -899,8 +899,8 @@ const states = {
       T: 6.61
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2.4,
+      T: 2
     },
     ENFP: {
       A: null,
@@ -966,8 +966,8 @@ const states = {
       T: 6.3
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2.17,
+      T: 1.74
     },
     ENFP: {
       A: null,
@@ -1033,8 +1033,8 @@ const states = {
       T: 5.96
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 1.9,
+      T: 1.87
     },
     ENFP: {
       A: null,
@@ -1100,8 +1100,8 @@ const states = {
       T: 6.02
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 1.9,
+      T: 1.79
     },
     ENFP: {
       A: null,
@@ -1167,8 +1167,8 @@ const states = {
       T: 5.65
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2.5,
+      T: 2.13
     },
     ENFP: {
       A: null,
@@ -1234,8 +1234,8 @@ const states = {
       T: 5.56
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 1.89,
+      T: 1.78
     },
     ENFP: {
       A: null,
@@ -1301,8 +1301,8 @@ const states = {
       T: 5.68
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 1.9,
+      T: 1.96
     },
     ENFP: {
       A: null,
@@ -1368,8 +1368,8 @@ const states = {
       T: 5.89
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2.06,
+      T: 1.96
     },
     ENFP: {
       A: null,
@@ -1435,8 +1435,8 @@ const states = {
       T: 5.93
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2.02,
+      T: 2.02
     },
     ENFP: {
       A: null,
@@ -1502,8 +1502,8 @@ const states = {
       T: 6.35
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2.19,
+      T: 2.06
     },
     ENFP: {
       A: null,
@@ -1569,8 +1569,8 @@ const states = {
       T: 6.39
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2.06,
+      T: 2.07
     },
     ENFP: {
       A: null,
@@ -1636,8 +1636,8 @@ const states = {
       T: 5.79
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2.2,
+      T: 2.08
     },
     ENFP: {
       A: null,
@@ -1704,8 +1704,8 @@ const states = {
       T: 6.02
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2.04,
+      T: 2.09
     },
     ENFP: {
       A: null,
@@ -1771,8 +1771,8 @@ const states = {
       T: 6.36
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 1.95,
+      T: 2.08
     },
     ENFP: {
       A: null,
@@ -1838,8 +1838,8 @@ const states = {
       T: 6.74
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 1.82,
+      T: 2.08
     },
     ENFP: {
       A: null,
@@ -1905,8 +1905,8 @@ const states = {
       T: 5.82
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2.17,
+      T: 1.95
     },
     ENFP: {
       A: null,
@@ -1972,8 +1972,8 @@ const states = {
       T: 5.38
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2.52,
+      T: 2.35
     },
     ENFP: {
       A: null,
@@ -2039,8 +2039,8 @@ const states = {
       T: 5.67
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2.12,
+      T: 2.14
     },
     ENFP: {
       A: null,
@@ -2106,8 +2106,8 @@ const states = {
       T: 6
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2.6,
+      T: 2.1
     },
     ENFP: {
       A: null,
@@ -2173,8 +2173,8 @@ const states = {
       T: 5.76
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2.4,
+      T: 2.01
     },
     ENFP: {
       A: null,
@@ -2240,8 +2240,8 @@ const states = {
       T: 5.77
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2.02,
+      T: 2.15
     },
     ENFP: {
       A: null,
@@ -2307,8 +2307,8 @@ const states = {
       T: 6.03
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2.05,
+      T: 1.94
     },
     ENFP: {
       A: null,
@@ -2374,8 +2374,8 @@ const states = {
       T: 5.76
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 1.97,
+      T: 1.86
     },
     ENFP: {
       A: null,
@@ -2441,8 +2441,8 @@ const states = {
       T: 7.74
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 1.66,
+      T: 1.83
     },
     ENFP: {
       A: null,
@@ -2508,8 +2508,8 @@ const states = {
       T: 5.95
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2.2,
+      T: 1.98
     },
     ENFP: {
       A: null,
@@ -2575,8 +2575,8 @@ const states = {
       T: 6.46
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2.19,
+      T: 2.23
     },
     ENFP: {
       A: null,
@@ -2642,8 +2642,8 @@ const states = {
       T: 6.46
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2.03,
+      T: 2.09
     },
     ENFP: {
       A: null,
@@ -2709,8 +2709,8 @@ const states = {
       T: 5.97
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2.32,
+      T: 2.24
     },
     ENFP: {
       A: null,
@@ -2776,8 +2776,8 @@ const states = {
       T: 6.35
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2.16,
+      T: 2.14
     },
     ENFP: {
       A: null,
@@ -2843,8 +2843,8 @@ const states = {
       T: 7.08
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2,
+      T: 2.08
     },
     ENFP: {
       A: null,
@@ -2910,8 +2910,8 @@ const states = {
       T: 6.17
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 1.95,
+      T: 2.04
     },
     ENFP: {
       A: null,
@@ -2977,8 +2977,8 @@ const states = {
       T: 6.78
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2.09,
+      T: 1.74
     },
     ENFP: {
       A: null,
@@ -3044,8 +3044,8 @@ const states = {
       T: 6.73
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 1.78,
+      T: 1.91
     },
     ENFP: {
       A: null,
@@ -3111,8 +3111,8 @@ const states = {
       T: 7.49
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 1.82,
+      T: 1.87
     },
     ENFP: {
       A: null,
@@ -3178,8 +3178,8 @@ const states = {
       T: 6.31
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 1.86,
+      T: 1.42
     },
     ENFP: {
       A: null,
@@ -3245,8 +3245,8 @@ const states = {
       T: 5.84
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 2.46,
+      T: 2.01
     },
     ENFP: {
       A: null,
@@ -3312,8 +3312,8 @@ const states = {
       T: 6.32
     },
     ENFJ: {
-      A: null,
-      T: null
+      A: 1.94,
+      T: 1.74
     },
     ENFP: {
       A: null,
