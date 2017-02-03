@@ -22,6 +22,23 @@
 		<script src="paths.js"></script>
 		<script>
 
+		////// HOW TO  GET RANGE -- MAYBE
+		//SET MIN
+		//SET MAX 
+		//SUBTRACT MIN FROM MAX
+		//SUBTRACT MIN FROM ALL NUMBERS/PERCENTAGES COMPARED TO MAX
+		//YOU NOW HAVE ACCURATE RANGE
+		//INSTEAD OF 15/16 WHEN THE MINIMUM IS 14,
+		//MAX IS 16 - 14 AND COMPARED NUMBER IS 15 - 14, SO YOU HAVE 1/2 OR 50% INSTEAD OF 94%
+		//BOOM
+
+		//TODO -
+		//SET UP WEBPACK, MAKE SURE NOTHING BREAKS
+		//SET UP FORM IN REDUX STORE
+
+		//MAKE ROTATING SPRITES FOR ALL THE ERSONALITY THINGIES?
+		//AND THEY WILL ROTATE WHEN YOU TYPE OR CLICK YO.
+
 			var container;
 			var camera, scene, raycaster, renderer;
 
@@ -74,10 +91,22 @@
 					return max
 				}
 
-				const createMesh = (path, name, personality) => { //params
+				const getMin = (personality) => {
+					let min = 10000;
+					for(var name in states) {
+						let temp = percentOfState(name, personality)
+						if(temp < min) {
+							min = temp
+						}
+					}
+					return min
+				}
 
-						let max = getMax(personality)
-						let percent = (((percentOfState(name, personality) / max) * (percentOfState(name, personality) / max)* (percentOfState(name, personality) / max)* (percentOfState(name, personality) / max)* (percentOfState(name, personality) / max)) * 100).toFixed()
+				const createMesh = (path, name, personality) => { //params
+						let min = getMin(personality)
+						let max = getMax(personality) - min
+						//let percent = (((percentOfState(name, personality) / max) * (percentOfState(name, personality) / max)* (percentOfState(name, personality) / max)* (percentOfState(name, personality) / max)* (percentOfState(name, personality) / max)) * 100).toFixed()
+						let percent = (((percentOfState(name, personality) - min) / max) * 100).toFixed()
 						console.log(percent)
 						var meshMaterial = new THREE.MeshLambertMaterial( { color: "rgb("+ percent +"%, 0%, 0%)" } ) //add parameter here
 						var mesh = new THREE.Mesh(path, meshMaterial);
@@ -100,7 +129,7 @@
 				if(personality) {
 					renderStates(personality)
 				} else {
-					renderStates("ENFP")
+					renderStates("INFP")
 				}
 
 				////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -175,7 +204,7 @@
 			}
 
 		</script>
-		<div class="test" onClick="init('INFJ')">HEY TEST</div>
+		<div class="test" onClick="init('ESTJ')">HEY TEST</div>
 
 	</body>
 </html>
