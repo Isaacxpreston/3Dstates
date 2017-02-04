@@ -4,8 +4,8 @@
 		<style>
 			.test {
 				position: absolute;
-				top: 50%;
-				left: 50%;
+				top: 45%;
+				left: 65%;
 				z-index: 100;
 			}
 
@@ -15,6 +15,9 @@
 		</style>
 	</head>
 	<body>
+				<form id="myForm" onSubmit="reRender()">
+			<input class="test" type='text'></input>
+		</form>
 		
 		<script src="/node_modules/three/build/three.js"></script>
 		<script src="d3-threeD.js"></script>
@@ -169,6 +172,7 @@
 				var intersects = raycaster.intersectObjects( scene.children );
 
 				if ( intersects.length > 0 ) {
+					//console.log(intersects[0].object.name)
 					if ( INTERSECTED != intersects[ 0 ].object ) {
 						if ( INTERSECTED ) {
 							INTERSECTED.material.emissive.setHex( INTERSECTED.currentHex )
@@ -178,6 +182,9 @@
 						INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
 						INTERSECTED.material.emissive.setHex( 0xff0000 );
 						INTERSECTED.scale.z += 25
+						//console.log(INTERSECTED) //could dispatch a mouse change that says the state name here.....
+						//or have a div that follows mouse and displays current selected's name
+						//set name properties on meshes so that corresponding data can be accessed	
 					}
 				} else {
 					if ( INTERSECTED ) {
@@ -191,8 +198,26 @@
 
 			}
 
+
+			//move and change to react later
+			document.getElementById('myForm').addEventListener( 'submit', prevent, false );
+
+			function prevent(e) {
+        e.preventDefault();
+   		}
+
+			const reRender = () => {
+				//console.log(document.getElementsByClassName("test")[0].value)
+				let personality = document.getElementsByClassName("test")[0].value
+				if(types.indexOf(personality) !== -1){
+					init(personality)
+				}
+				document.getElementsByClassName("test")[0].value = ""
+			}
+
 		</script>
-		<div class="test" onClick="init('ESTJ')">HEY TEST</div>
+
+
 
 	</body>
 </html>
