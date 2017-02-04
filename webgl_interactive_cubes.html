@@ -9,13 +9,31 @@
 				z-index: 100;
 			}
 
+			.display {
+				position: absolute;
+				top: 45%;
+				left: 10%;
+				z-index: 100;
+			}
+
 			.test:hover {
 				background: red;
 			}
+
+			.display:hover {
+				background: red
+			}
+
 		</style>
 	</head>
 	<body>
-				<form id="myForm" onSubmit="reRender()">
+
+		<div class="display">
+			<div id="header"></div>
+			<p id="content"></p>
+		</div>
+		
+		<form id="myForm" onSubmit="reRender()">
 			<input class="test" type='text'></input>
 		</form>
 		
@@ -47,12 +65,12 @@
 			let mouseClicked = false;
 
 			const onDocumentMouseDown = (e) => {
-				e.preventDefault()
+				//e.preventDefault()
 				mouseClicked = true
 			}
 
 			const onDocumentMouseUp = (e) => {
-				e.preventDefault()
+				//	e.preventDefault()
 				mouseClicked = false
 			}
 			//////
@@ -118,7 +136,13 @@
 						var meshMaterial = new THREE.MeshLambertMaterial( { color: "rgb("+ percent +"%," + percent + "%, " + percent + "%)" } )
 						var mesh = new THREE.Mesh(path, meshMaterial);
 						mesh.scale.z = (percent / 5) + 0.001 //add parameter here 	
-						mesh.name = name
+						mesh.properties = {
+							name,
+							personality,
+							assertive: states[name][personality]['A'],
+							turbulent: states[name][personality]['T']
+						}
+						// mesh.foo = "FOOOOO"
 						scene.add(mesh)
 				}
 
@@ -191,7 +215,10 @@
 
 					//if state is clicked, do something with it
 					if(mouseClicked === true) {
-						console.log(intersects[0].object.name)
+						let props = intersects[0].object.properties
+						console.log(props)
+						document.getElementById("header").innerHTML = props.name + ": " + props.personality
+						document.getElementById("content").innerHTML = props.assertive + ", " + props.turbulent 
 						mouseClicked = false
 					}
 					
