@@ -10,8 +10,8 @@
 
 			.test {
 				position: absolute;
-				top: 45%;
-				left: 65%;
+				top: 10%;
+				left: 45%;
 				background: #020a7a;
 				color: white;
 				z-index: 100;
@@ -19,8 +19,8 @@
 
 			.display {
 				position: absolute;
-				top: 55%;
-				left: 35%;
+				top: 40%;
+				left: 5%;
 				z-index: 100;
 			}
 
@@ -104,8 +104,8 @@
 
 				camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 1, 10000 );
 				scene = new THREE.Scene();
-				scene.rotation.x = 1.3
-				scene.position.set(-500, 0, -250)
+				scene.rotation.x = 1.25
+				scene.position.set(-window.innerWidth/3, 0, -window.innerHeight/2.25)
 
 				let light = new THREE.AmbientLight(0xffffff, 1)
 				scene.add( light );
@@ -187,8 +187,8 @@
 
 				raycaster = new THREE.Raycaster();
 
-				renderer = new THREE.WebGLRenderer();
-				renderer.setClearColor( 0xf0f0f0 );
+				renderer = new THREE.WebGLRenderer({alpha: true});
+				//renderer.setClearColor( 0xf0f0f0 );
 				renderer.setPixelRatio( window.devicePixelRatio );
 				renderer.setSize( window.innerWidth, window.innerHeight );
 				renderer.sortObjects = false;
@@ -226,7 +226,7 @@
 				var temp = new THREE.Vector3(0, 0, 0)
 				camera.lookAt(temp);
 				//camera.rotation.set(0.1, 0, 0)
-				camera.position.set(0,1000, 0)
+				camera.position.set(0,600, 0)
 				
 
 				// find intersections
