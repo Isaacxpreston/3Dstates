@@ -41,6 +41,22 @@
 			var mouse = new THREE.Vector2(), INTERSECTED;
 			var radius = 100, theta = 0;
 
+
+			//mouse events
+			//move this stuff to redux later
+			let mouseClicked = false;
+
+			const onDocumentMouseDown = (e) => {
+				e.preventDefault()
+				mouseClicked = true
+			}
+
+			const onDocumentMouseUp = (e) => {
+				e.preventDefault()
+				mouseClicked = false
+			}
+			//////
+
 			init();
 			animate();
 
@@ -102,6 +118,7 @@
 						var meshMaterial = new THREE.MeshLambertMaterial( { color: "rgb("+ percent +"%," + percent + "%, " + percent + "%)" } )
 						var mesh = new THREE.Mesh(path, meshMaterial);
 						mesh.scale.z = (percent / 5) + 0.001 //add parameter here 	
+						mesh.name = name
 						scene.add(mesh)
 				}
 
@@ -135,6 +152,8 @@
 				container.appendChild(renderer.domElement);
 
 				document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+				document.addEventListener( 'mousedown', onDocumentMouseDown, false );
+				document.addEventListener( 'mouseup', onDocumentMouseUp, false );
 
 				window.addEventListener( 'resize', onWindowResize, false );
 			}
@@ -159,20 +178,23 @@
 			}
 
 			function render() {
-
 				scene.scale.set(0.1, 0.1, 0.1)
 				scene.position.y = 0.1
 				scene.rotation.x = 1
 				camera.position.set(0,100,0); camera.lookAt(scene.position);
 
 				// find intersections
-
 				raycaster.setFromCamera( mouse, camera );
-
 				var intersects = raycaster.intersectObjects( scene.children );
 
 				if ( intersects.length > 0 ) {
-					//console.log(intersects[0].object.name)
+
+					//if state is clicked, do something with it
+					if(mouseClicked === true) {
+						console.log(intersects[0].object.name)
+						mouseClicked = false
+					}
+					
 					if ( INTERSECTED != intersects[ 0 ].object ) {
 						if ( INTERSECTED ) {
 							INTERSECTED.material.emissive.setHex( INTERSECTED.currentHex )
@@ -198,7 +220,6 @@
 
 			}
 
-
 			//move and change to react later
 			document.getElementById('myForm').addEventListener( 'submit', prevent, false );
 
@@ -216,8 +237,6 @@
 			}
 
 		</script>
-
-
 
 	</body>
 </html>
