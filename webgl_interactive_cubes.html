@@ -52,6 +52,7 @@
 		<script src="d3-threeD.js"></script>
 		<script src="16personalities.js"></script>
 		<script src="paths.js"></script>
+		<script src="/node_modules/three/examples/js/libs/tween.min.js"></script>
 		<script>
 		//TODO -
 		//SET UP WEBPACK, MAKE SURE NOTHING BREAKS
@@ -206,15 +207,31 @@
 				mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
 			}
 
+
+			////TOGGLE ZOOM////////////////////
 			const toggleZoom = () => {
-				if(scene.position.y > 0) {
-					scene.position.y = 0
-					zooming = false
+				// let tempx = -window.innerWidth/3 - mouse.x * 1000,
+				// let tempy = -window.innerHeight/2.25 + mouse.y * 250
+
+				if(zooming === true) {
+					new TWEEN.Tween(scene.position).to({
+						x: -window.innerWidth/3 - mouse.x * 1000,
+						y: 0,
+						z: -window.innerHeight/2.25 + mouse.y * 250
+					}, 100 )
+					.start();
+
+					setTimeout(() => {
+						zooming = false
+					}, 100)
 				} else {
-					scene.position.y = 150
+					new TWEEN.Tween(scene.position).to({
+						x: -window.innerWidth/3 - mouse.x * 1500, 
+						y: 150,
+						z: -window.innerHeight/2.25 + mouse.y * 500
+					}, 250 )
+					.start();
 					zooming = true
-					scene.position.x = -window.innerWidth/3 - mouse.x * 1500 
-					scene.position.z = -window.innerHeight/2.25 + mouse.y * 500
 				}
 			}
 
@@ -226,9 +243,11 @@
 			}
 
 			function render() {
+				TWEEN.update();
+
 				if(!zooming) {
 					camera.lookAt(new THREE.Vector3(0, 0, 0));
-					camera.position.set(0, 400 /* - mouse.y * 75*/, 0)
+					camera.position.set(0, 400, 0)
 					camera.rotation.y = mouse.x * 0.85
 
 					//normal movement
