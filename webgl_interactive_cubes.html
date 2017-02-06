@@ -156,6 +156,10 @@
 							assertive: states[name][personality]['A'],
 							turbulent: states[name][personality]['T']
 						}
+						mesh.hover = {
+							original: (percent / 5) + 0.001,
+							expanded: (percent / 5) + 25.001
+						}
 						scene.add(mesh)
 				}
 
@@ -249,17 +253,9 @@
 					camera.lookAt(new THREE.Vector3(0, 0, 0));
 					camera.position.set(0, 400, 0)
 					camera.rotation.y = mouse.x * 0.85
-
-					//normal movement
 					scene.position.x = -window.innerWidth/3 - mouse.x * 1000
 					scene.position.z = -window.innerHeight/2.25 + mouse.y * 250
-					
-
-					//trying to center
-					// scene.position.x = -window.innerWidth/3 - mouse.x * 9000
-					// scene.position.z = -window.innerHeight/2.25 + mouse.y * 6000
 				}
-
 
 				// find intersections
 				raycaster.setFromCamera( mouse, camera );
@@ -267,7 +263,7 @@
 
 				if ( intersects.length > 0 ) {
 					//if state is clicked, display its properties
-					if(mouseClicked === true) {
+					if (mouseClicked === true) {
 						toggleZoom()
 						let props = intersects[0].object.properties
 						document.getElementById("header").innerHTML = props.name + ": " + props.personality
@@ -280,12 +276,20 @@
 					if ( INTERSECTED != intersects[ 0 ].object ) {
 						if ( INTERSECTED ) {
 							INTERSECTED.material.emissive.setHex( INTERSECTED.currentHex )
-							INTERSECTED.scale.z -= 25
+							// INTERSECTED.scale.z -= 25
+							new TWEEN.Tween(INTERSECTED.scale).to({
+								z: INTERSECTED.hover.original
+							}, 150 )
+							.start();
 						};
 						INTERSECTED = intersects[ 0 ].object;
 						INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
-						INTERSECTED.material.emissive.setHex( 0xff0000 );
-						INTERSECTED.scale.z += 25
+						INTERSECTED.material.emissive.set( 0xff0000 );
+						//INTERSECTED.scale.z += 25
+						new TWEEN.Tween(INTERSECTED.scale).to({
+							z: INTERSECTED.hover.expanded
+						}, 150 )
+						.start();
 						//console.log(INTERSECTED) //could dispatch a mouse change that says the state name here.....
 						//or have a div that follows mouse and displays current selected's name
 						//set name properties on meshes so that corresponding data can be accessed	
@@ -293,7 +297,11 @@
 				} else {
 					if ( INTERSECTED ) {
 						INTERSECTED.material.emissive.setHex( INTERSECTED.currentHex )
-						INTERSECTED.scale.z -= 25
+						// INTERSECTED.scale.z -= 25
+						new TWEEN.Tween(INTERSECTED.scale).to({
+							z: INTERSECTED.hover.original
+						}, 150 )
+						.start();
 					};
 					INTERSECTED = null;
 				}
