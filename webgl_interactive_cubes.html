@@ -260,8 +260,8 @@
 			function render() {
 				TWEEN.update();
 
-			 	document.getElementById("mouseFollow").style.top = mouse.originaly - 25 + "px"
-				document.getElementById("mouseFollow").style.left = mouse.originalx - 10 + "px"
+			 	document.getElementById("mouseFollow").style.top = mouse.originaly - 45 + "px"
+				document.getElementById("mouseFollow").style.left = mouse.originalx - 12 + "px"
 
 				if(!zooming) {
 					camera.lookAt(new THREE.Vector3(0, 0, 0));
@@ -275,18 +275,25 @@
 				raycaster.setFromCamera( mouse, camera );
 				var intersects = raycaster.intersectObjects( scene.children );
 
-				//update mouseDiv
-				// document.getElementById(id).style.property = new style
-
 				if ( intersects.length > 0 ) {
 
 					//update mouseFollow
 					let props = intersects[0].object.properties
-					document.getElementById("mouseFollow").innerHTML = props.name 
+					//let mouseFollowHex = intersects[0].object.material.color.getHex().toString(16)
+					let objectColor = intersects[0].object.material.color
+					let mouseFollowHex = {
+						r: ((1 - objectColor.r) * 255).toFixed(),
+						g: ((1 - objectColor.g) * 255).toFixed(),
+						b: ((1 - objectColor.b) * 255).toFixed()
+					}
 
+					document.getElementById("mouseFollow").innerHTML = props.name 
+					document.getElementById("mouseFollow").style.color = "rgb(" + mouseFollowHex.r + "," + mouseFollowHex.g + "," + mouseFollowHex.b + ")"
+					
 					//if state is clicked, display its properties
 					if (mouseClicked === true) {
 						toggleZoom()
+						console.log(intersects[0].object.material.color.getHex())
 						document.getElementById("header").innerHTML = props.name + ": " + props.personality
 						document.getElementById("assertive").innerHTML = "ASSERTIVE: " + props.assertive
 						document.getElementById("turbulent").innerHTML = "TURBULENT: " + props.turbulent 
