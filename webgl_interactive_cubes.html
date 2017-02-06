@@ -8,6 +8,12 @@
 
 			}
 
+			#mouseFollow {
+				position: absolute;
+				z-index: 120;
+				font-size: 25px;
+			}
+
 			.test {
 				position: absolute;
 				top: 10%;
@@ -46,6 +52,8 @@
 		<form id="myForm" onSubmit="reRender()">
 			<input class="test" type='text'></input>
 		</form>
+
+		<div id="mouseFollow"></div>
 		
 		<script src="/node_modules/three/build/three.js"></script>
 		<script src="/node_modules/three/examples/js/renderers/CSS3DRenderer.js"></script>
@@ -87,6 +95,7 @@
 				//	e.preventDefault()
 				mouseClicked = false
 			}
+
 			//////
 
 			init();
@@ -209,6 +218,8 @@
 				event.preventDefault();
 				mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
 				mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+				mouse.originalx = event.clientX
+				mouse.originaly = event.clientY
 			}
 
 
@@ -249,6 +260,9 @@
 			function render() {
 				TWEEN.update();
 
+			 	document.getElementById("mouseFollow").style.top = mouse.originaly - 25 + "px"
+				document.getElementById("mouseFollow").style.left = mouse.originalx - 10 + "px"
+
 				if(!zooming) {
 					camera.lookAt(new THREE.Vector3(0, 0, 0));
 					camera.position.set(0, 400, 0)
@@ -261,11 +275,18 @@
 				raycaster.setFromCamera( mouse, camera );
 				var intersects = raycaster.intersectObjects( scene.children );
 
+				//update mouseDiv
+				// document.getElementById(id).style.property = new style
+
 				if ( intersects.length > 0 ) {
+
+					//update mouseFollow
+					let props = intersects[0].object.properties
+					document.getElementById("mouseFollow").innerHTML = props.name 
+
 					//if state is clicked, display its properties
 					if (mouseClicked === true) {
 						toggleZoom()
-						let props = intersects[0].object.properties
 						document.getElementById("header").innerHTML = props.name + ": " + props.personality
 						document.getElementById("assertive").innerHTML = "ASSERTIVE: " + props.assertive
 						document.getElementById("turbulent").innerHTML = "TURBULENT: " + props.turbulent 
@@ -303,6 +324,7 @@
 						}, 150 )
 						.start();
 					};
+					document.getElementById("mouseFollow").innerHTML = "" 
 					INTERSECTED = null;
 				}
 
