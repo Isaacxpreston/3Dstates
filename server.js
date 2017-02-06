@@ -25,6 +25,10 @@ app.get('/youtube', (req, res) => (
   res.sendFile(path.resolve(__dirname, 'css3d_youtube.html'))
 ));
 
+app.get('/zoom', (req, res) => (
+  res.sendFile(path.resolve(__dirname, '03.02-zoom-camera-to-object.html'))
+));
+
 app.get('/', (req, res) => (
   res.sendFile(path.resolve(__dirname, /*'../client/app',*/ 'index.html'))
 ));

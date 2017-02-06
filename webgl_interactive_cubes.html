@@ -78,6 +78,7 @@
 			const onDocumentMouseDown = (e) => {
 				//e.preventDefault()
 				mouseClicked = true
+				toggleZoom()
 			}
 
 			const onDocumentMouseUp = (e) => {
@@ -106,6 +107,7 @@
 				scene = new THREE.Scene();
 				scene.rotation.x = 1.25
 				scene.position.set(-window.innerWidth/3, 0, -window.innerHeight/2.25)
+				//x, y, z
 
 				let light = new THREE.AmbientLight(0xffffff, 1)
 				scene.add( light );
@@ -213,6 +215,14 @@
 				mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
 			}
 
+			const toggleZoom = () => {
+				// if(scene.position.y > 0) {
+				// 	scene.position.set(-window.innerWidth/3, 0, -window.innerHeight/2.25)
+				// } else {
+				// 	scene.position.set((mouse.x * window.innerWidth)/3, 250, -window.innerHeight/2.25)
+				// }
+			}
+
 			//
 
 			function animate() {
@@ -221,13 +231,12 @@
 			}
 
 			function render() {
-				// scene.scale.set(0.1, 0.1, 0.1)
-				// scene.rotation.x = 1.3
 				var temp = new THREE.Vector3(0, 0, 0)
 				camera.lookAt(temp);
-				//camera.rotation.set(0.1, 0, 0)
-				camera.position.set(0,600, 0)
-				
+				camera.position.set(0, 550, 0)
+				scene.position.x = -window.innerWidth/3 - mouse.x * 750
+				scene.position.z = -window.innerHeight/2.5 + mouse.y * 150
+				camera.rotation.y = mouse.x
 
 				// find intersections
 				raycaster.setFromCamera( mouse, camera );
@@ -237,7 +246,6 @@
 					//if state is clicked, display its properties
 					if(mouseClicked === true) {
 						let props = intersects[0].object.properties
-						console.log(intersects[0].object)
 						document.getElementById("header").innerHTML = props.name + ": " + props.personality
 						document.getElementById("assertive").innerHTML = "ASSERTIVE: " + props.assertive
 						document.getElementById("turbulent").innerHTML = "TURBULENT: " + props.turbulent 
@@ -267,7 +275,6 @@
 				}
 
 				renderer.render( scene, camera );
-
 			}
 
 			//move and change to react later
@@ -278,15 +285,14 @@
    		}
 
 			const reRender = () => {
-				//console.log(document.getElementsByClassName("test")[0].value)
 				let personality = document.getElementsByClassName("test")[0].value
 				if(types.indexOf(personality) !== -1){
 					init(personality)
+					//todo- change this so it just adjusts scales of everything
 				}
 				document.getElementsByClassName("test")[0].value = ""
 			}
 
 		</script>
-
 	</body>
 </html>
