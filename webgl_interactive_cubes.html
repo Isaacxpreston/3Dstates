@@ -69,6 +69,7 @@
 
 			var mouse = new THREE.Vector2(), INTERSECTED;
 			var radius = 100, theta = 0;
+			var zooming = false;
 
 
 			//mouse events
@@ -78,7 +79,7 @@
 			const onDocumentMouseDown = (e) => {
 				//e.preventDefault()
 				mouseClicked = true
-				toggleZoom()
+				//toggleZoom()
 			}
 
 			const onDocumentMouseUp = (e) => {
@@ -105,7 +106,7 @@
 
 				camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 1, 10000 );
 				scene = new THREE.Scene();
-				scene.rotation.x = 1.25
+				scene.rotation.x = 1.5
 				scene.position.set(-window.innerWidth/3, 0, -window.innerHeight/2.25)
 				//x, y, z
 
@@ -157,16 +158,6 @@
 						scene.add(mesh)
 				}
 
-				// var div = document.createElement( 'div' );
-				// div.style.width = '480px';
-				// div.style.height = '360px';
-				// div.style.backgroundColor = '#000';
-				// div.style['z-index'] = 200
-				// div.innerHTML = "YO YOYOYOYOYO"
-				// var cssObj = new THREE.CSS3DObject( div );
-				// cssObj.scale.set(100, 100, 100)
-				// scene.add(cssObj);
-
 				const options = {
 					amount: 1,
 					bevelThickness: 2,
@@ -216,11 +207,15 @@
 			}
 
 			const toggleZoom = () => {
-				// if(scene.position.y > 0) {
-				// 	scene.position.set(-window.innerWidth/3, 0, -window.innerHeight/2.25)
-				// } else {
-				// 	scene.position.set((mouse.x * window.innerWidth)/3, 250, -window.innerHeight/2.25)
-				// }
+				if(scene.position.y > 0) {
+					scene.position.y = 0
+					zooming = false
+				} else {
+					scene.position.y = 150
+					zooming = true
+					scene.position.x = -window.innerWidth/3 - mouse.x * 1500 
+					scene.position.z = -window.innerHeight/2.25 + mouse.y * 500
+				}
 			}
 
 			//
@@ -231,12 +226,21 @@
 			}
 
 			function render() {
-				var temp = new THREE.Vector3(0, 0, 0)
-				camera.lookAt(temp);
-				camera.position.set(0, 550, 0)
-				scene.position.x = -window.innerWidth/3 - mouse.x * 750
-				scene.position.z = -window.innerHeight/2.5 + mouse.y * 150
-				camera.rotation.y = mouse.x
+				if(!zooming) {
+					camera.lookAt(new THREE.Vector3(0, 0, 0));
+					camera.position.set(0, 400 /* - mouse.y * 75*/, 0)
+					camera.rotation.y = mouse.x * 0.85
+
+					//normal movement
+					scene.position.x = -window.innerWidth/3 - mouse.x * 1000
+					scene.position.z = -window.innerHeight/2.25 + mouse.y * 250
+					
+
+					//trying to center
+					// scene.position.x = -window.innerWidth/3 - mouse.x * 9000
+					// scene.position.z = -window.innerHeight/2.25 + mouse.y * 6000
+				}
+
 
 				// find intersections
 				raycaster.setFromCamera( mouse, camera );
@@ -245,6 +249,7 @@
 				if ( intersects.length > 0 ) {
 					//if state is clicked, display its properties
 					if(mouseClicked === true) {
+						toggleZoom()
 						let props = intersects[0].object.properties
 						document.getElementById("header").innerHTML = props.name + ": " + props.personality
 						document.getElementById("assertive").innerHTML = "ASSERTIVE: " + props.assertive
