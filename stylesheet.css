@@ -1,0 +1,42 @@
+			body {
+				background: #020a7a;
+				color: white;
+
+			}
+
+			#mouseFollow {
+				position: absolute;
+				z-index: 120;
+				font-size: 25px;
+			}
+
+			#currentPersonalitySearch {
+				position: absolute;
+				left: 45%;
+				font-size: 50px;
+				z-index: 100
+			}
+
+			.test {
+				position: absolute;
+				top: 10%;
+				left: 45%;
+				background: #020a7a;
+				color: white;
+				z-index: 100;
+			}
+
+			.display {
+				position: absolute;
+				top: 40%;
+				left: 5%;
+				z-index: 100;
+			}
+
+			.test:hover {
+				background: red;
+			}
+
+			.display:hover {
+				background: red
+			}
