@@ -24,7 +24,9 @@ const initRender = () => {
 }
 
 const renderFromUrl = () => {
-  let url = window.location.href.slice(22).toUpperCase()
+  //let url = window.location.href.slice(22).toUpperCase()
+  // https://personality-data.herokuapp.com/
+  let url = window.location.href.slice(39).toUpperCase()
   if(types.indexOf(url) !== -1) {
     init(url)
     document.getElementById("landingBg").className = "display-hidden-none"
