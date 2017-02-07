@@ -4,11 +4,23 @@
 				overflow: hidden;
 			}
 
+			a:link {
+				text-decoration: none
+			}
+
+			a:visited {
+				color: white
+			}
+
+			.landing-header {
+				font-size: 72px;
+			}
+
 			.landing-content {
 				position: absolute;
 				margin-left: auto;
 				margin-right: auto;
-				margin-top: 25px;
+				margin-top: 100px;
 				left: 0;
 				right: 0;
 				top: 15%;
@@ -88,11 +100,6 @@
 				z-index: 100;
 			}
 
-			.display-hidden-none {
-				display: none;
-				opacity: 0;
-			}
-
 			.inputPersonality:focus {
     		outline: none;
 			}
@@ -101,6 +108,28 @@
 				background: white;
 				color: black;
 			}
+
+			.inputPersonality2 {
+				height: 100px;
+				width: 300px;
+				font-size: 100px;
+				text-align: center;
+				background: none;
+				border: 1px solid white;
+				user-select: none;
+				color: white;
+				z-index: 100;
+			}
+
+			.inputPersonality2:focus {
+    		outline: none;
+			}
+
+			.display-hidden-none {
+				display: none;
+				opacity: 0;
+			}
+
 
 			.display-hidden {
 				position: absolute;
@@ -177,4 +206,16 @@
 				background: #020a7a;
 				border-bottom: 1px solid black;
 				font-size: 25px;
+			}
+
+			.searchBar-landing {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 25px;
+				padding: 5px;
+				background: #020a7a;
+				font-size: 25px;
+				z-index: 400
 			}

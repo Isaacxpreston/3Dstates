@@ -5,13 +5,18 @@
 	</head>
 	<body>
 
-		<div class="landing-bg">
+		<div id="landingBg" class="landing-bg">
 		</div>
-		<div class="landing-content">
-			<h1> 16 Personality Data </h1>
-			<h2>Enter your personality type</h2>
-			<h3>Take the test here</h3>
+		<div id="landingContent" class="landing-content">
+			<span class="landing-header"> 16 Personality Data Map </span>
+			<br /><br />
+			<form id="myForm2" onSubmit="initRender()">
+				<input class="inputPersonality2" type='text'></input>
+			</form>
+			Enter your personality type
+			<h3><a href="https://www.16personalities.com/free-personality-test">Take the test here</a></h3>
 		</div>
+		<div id="searchBarLanding" class="searchBar-landing"></div>
 
 		<div id="display" class="display-hidden-none">
 			<h1>
