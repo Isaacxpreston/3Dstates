@@ -25,12 +25,15 @@
 		</div>
 
 		<div class="searchBar">
-			<div id="currentSearch"></div>
+			<span id="currentSearch"></span> |  
+			<span id="currentPercentages"></span>% of population
+			<span class="float-right">
+				New Search |  
+			</span>
+			<form id="myForm" onSubmit="reRender()">
+				<input class="inputPersonality" type='text'></input>
+			</form>
 		</div>
-
-		<!--<form id="myForm" onSubmit="reRender()">
-			<input class="test" type='text'></input>
-		</form>-->
 
 		<div id="mouseFollow"></div>
 		

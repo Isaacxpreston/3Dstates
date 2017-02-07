@@ -109,6 +109,7 @@ function init(personality) {
       createMesh(path, state.name, personality)
     })
     document.getElementById("currentSearch").innerHTML = personality
+    document.getElementById("currentPercentages").innerHTML = eval(percentages[personality]["A"] + percentages[personality]["T"]).toFixed(1)
   }
 
   if(personality) {
@@ -282,17 +283,9 @@ function render() {
 }
 
 //move later
-//document.getElementById('myForm').addEventListener( 'submit', prevent, false );
+document.getElementById('myForm').addEventListener( 'submit', prevent, false );
 
 function prevent(e) {
   e.preventDefault();
 }
 
-const reRender = () => {
-  let personality = document.getElementsByClassName("test")[0].value
-  if(types.indexOf(personality) !== -1){
-    init(personality)
-    //todo- change this so it just adjusts scales of everything
-  }
-  document.getElementsByClassName("test")[0].value = ""
-}

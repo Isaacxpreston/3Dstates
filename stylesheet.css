@@ -17,22 +17,36 @@
 				z-index: 100
 			}
 
-			.test {
+			.float-right{
 				position: absolute;
-				top: 10%;
-				left: 45%;
-				background: #020a7a;
-				color: white;
-				z-index: 100;
+				top: 5px;
+				right: 275px;
 			}
 
-			.test:hover {
-				background: grey;
+			.inputPersonality {
+				position: absolute;
+				top: 2.5px;
+				right: 15px;
+				font-size: 24px;
+				background: #020a7a;
+				border: 1px solid white;
+				user-select: none;
+				color: white;
+				z-index: 100;
 			}
 
 			.display-hidden-none {
 				display: none;
 				opacity: 0;
+			}
+
+			.inputPersonality:focus {
+    		outline: none;
+			}
+			.inputPersonality:hover {
+				border: 1px solid black;
+				background: white;
+				color: black;
 			}
 
 			.display-hidden {
@@ -108,5 +122,6 @@
 				width: 100%;
 				padding: 5px;
 				background: #020a7a;
-				border-bottom: 1px solid black
+				border-bottom: 1px solid black;
+				font-size: 25px;
 			}
