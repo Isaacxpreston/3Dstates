@@ -5,13 +5,24 @@
 	</head>
 	<body>
 
-		<div class="display">
-			<div id="header"></div>
-			<p id="assertive"></p>
-			<p id="turbulent"></p>
-			<p id="total"></p>
+		<div id="display" class="display-hidden-none">
+			<h1>
+				<span id="name"></span> : 
+				<span id="total"></span>%
+			</h1>
+			<div>
+				assertive: <span id="assertive"></span>%
+			</div>
+			<div id="assertiveBar">
+				<div id="assertiveBarLoader" class="display-hidden-none"></div>
+			</div>
+			<div>
+				turbulent: <span id="turbulent"></span>%
+			</div>
+			<div id="turbulentBar">
+				<div id="turbulentBarLoader" class="display-hidden-none"></div>
+			</div>
 		</div>
-		
 
 		<div id="currentPersonalitySearch"></div>
 
@@ -20,7 +31,6 @@
 		</form>
 
 		<div id="mouseFollow"></div>
-
 		<div id="container"></div>
 		
 		<script src="/node_modules/three/build/three.js"></script>
@@ -30,8 +40,7 @@
 		<script src="16personalities.js"></script>
 		<script src="paths.js"></script>
 		<script src="/node_modules/three/examples/js/libs/tween.min.js"></script>
-		
-		<!--<script src="css3d.js"></script>-->
 		<script src="renderStates.js"></script>
+		
 	</body>
 </html>
