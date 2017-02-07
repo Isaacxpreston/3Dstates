@@ -108,6 +108,7 @@ function init(personality) {
       let path = new THREE.ExtrudeGeometry(transformSVGPathExposed(state.path), options)
       createMesh(path, state.name, personality)
     })
+    document.getElementById("currentSearch").innerHTML = personality
   }
 
   if(personality) {
@@ -193,7 +194,11 @@ const toggleZoom = (props) => {
       document.getElementById("display").style.top = mouse.originaly + "px"
     }
     if(posx > 49) {
-      document.getElementById("display").style.left = mouse.originalx + 100 + "px"
+      if(posx > 64) {
+        document.getElementById("display").style.left = mouse.originalx + "px"
+      } else {
+        document.getElementById("display").style.left = mouse.originalx + 100 + "px"
+      }
     } else {
       document.getElementById("display").style.left = mouse.originalx - 250 + "px"
     }
@@ -277,7 +282,7 @@ function render() {
 }
 
 //move later
-document.getElementById('myForm').addEventListener( 'submit', prevent, false );
+//document.getElementById('myForm').addEventListener( 'submit', prevent, false );
 
 function prevent(e) {
   e.preventDefault();
@@ -289,6 +294,5 @@ const reRender = () => {
     init(personality)
     //todo- change this so it just adjusts scales of everything
   }
-  document.getElementById("currentPersonalitySearch").innerHTML = personality
   document.getElementsByClassName("test")[0].value = ""
 }

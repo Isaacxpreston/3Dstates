@@ -11,27 +11,28 @@
 				<span id="total"></span>%
 			</h1>
 			<div>
-				assertive: <span id="assertive"></span>%
+				Assertive: <span id="assertive"></span>%
 			</div>
 			<div id="assertiveBar">
 				<div id="assertiveBarLoader" class="display-hidden-none"></div>
 			</div>
 			<div>
-				turbulent: <span id="turbulent"></span>%
+				Turbulent: <span id="turbulent"></span>%
 			</div>
 			<div id="turbulentBar">
 				<div id="turbulentBarLoader" class="display-hidden-none"></div>
 			</div>
 		</div>
 
-		<div id="currentPersonalitySearch"></div>
+		<div class="searchBar">
+			<div id="currentSearch"></div>
+		</div>
 
-		<form id="myForm" onSubmit="reRender()">
+		<!--<form id="myForm" onSubmit="reRender()">
 			<input class="test" type='text'></input>
-		</form>
+		</form>-->
 
 		<div id="mouseFollow"></div>
-		<div id="container"></div>
 		
 		<script src="/node_modules/three/build/three.js"></script>
 		<script src="/node_modules/three/examples/js/controls/TrackballControls.js"></script>
@@ -41,6 +42,7 @@
 		<script src="paths.js"></script>
 		<script src="/node_modules/three/examples/js/libs/tween.min.js"></script>
 		<script src="renderStates.js"></script>
+		<script src="searchRender.js"></script>
 		
 	</body>
 </html>

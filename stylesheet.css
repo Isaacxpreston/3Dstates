@@ -1,7 +1,7 @@
 			body {
 				background: #020a7a;
 				color: white;
-
+				overflow: hidden;
 			}
 
 			#mouseFollow {
@@ -99,4 +99,14 @@
 				to {
 					width: 100%
 				}
+			}
+
+			.searchBar {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				padding: 5px;
+				background: #020a7a;
+				border-bottom: 1px solid black
 			}
