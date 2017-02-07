@@ -4,6 +4,59 @@
 				overflow: hidden;
 			}
 
+			.landing-content {
+				position: absolute;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 25px;
+				left: 0;
+				right: 0;
+				top: 15%;
+				opacity: 1;
+				width: 800px;
+				z-index: 300;
+				text-align: center;
+			}
+
+			.landing-bg {
+				position: absolute;
+				margin-left: auto;
+				margin-right: auto;
+				left: 0;
+				right: 0;
+				top: 15%;
+				background: #020a7a;
+				border: 1px solid white;
+				opacity: 0.5;
+				width: 800px;
+				height: 500px;
+				z-index: 300;
+				animation: hoverOpacityOut linear 2s
+			}
+
+			.landing-bg:hover {
+				opacity: 0.9;
+				animation: hoverOpacity linear 2s
+			}
+
+			@keyframes hoverOpacity {
+				from {
+					opacity: 0.5
+				}
+				to {
+					opacity: 0.9
+				}
+			}
+
+			@keyframes hoverOpacityOut {
+				from {
+					opacity: 0.9
+				}
+				to {
+					opacity: 0.5
+				}
+			}
+
 			#mouseFollow {
 				position: absolute;
 				z-index: 120;

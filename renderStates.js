@@ -4,6 +4,7 @@ var camera, scene, raycaster, renderer;
 var mouse = new THREE.Vector2(), INTERSECTED;
 var radius = 100, theta = 0;
 var zooming = false;
+var disabled = false
 
 //mouse events
 let mouseClicked = false;
@@ -47,33 +48,6 @@ function init(personality) {
 
   //SVG LOADER////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-  const percentOfState = (name, personality) => {
-    return (states[name][personality]['A'] + states[name][personality]['T']) / 100
-  }
-
-  const getMax = (personality) => {
-    let max = 0;
-    for(var name in states) {
-      let temp = percentOfState(name, personality)
-      if(temp > max) {
-        max = temp
-      }
-    }
-    return max
-  }
-
-  const getMin = (personality) => {
-    let min = 10000;
-    for(var name in states) {
-      let temp = percentOfState(name, personality)
-      if(temp < min) {
-        min = temp
-      }
-    }
-    return min
-  }
-
-
   /////ADDING MESHES
   const createMesh = (path, name, personality) => {
       let min = getMin(personality)
@@ -95,7 +69,23 @@ function init(personality) {
       scene.add(mesh)
   }
 
-  
+    const createDefaultMesh = (path, name) => {
+      var meshMaterial = new THREE.MeshLambertMaterial( { color: "rgb(100%, 100%, 100%)", transparent: true, opacity: 0.8 } )
+      var mesh = new THREE.Mesh(path, meshMaterial);
+      mesh.scale.z = 10
+      mesh.properties = {
+        name: "",
+        personality: "",
+        assertive: "",
+        turbulent: ""
+      }
+      mesh.hover = {
+        original: 10,
+        expanded: 25
+      }
+      scene.add(mesh)
+  }
+
   /////////////////
 
   const options = {
@@ -104,18 +94,38 @@ function init(personality) {
   };
 
   const renderStates = (personality) => {
-    statePaths.forEach((state) => {
-      let path = new THREE.ExtrudeGeometry(transformSVGPathExposed(state.path), options)
-      createMesh(path, state.name, personality)
-    })
-    document.getElementById("currentSearch").innerHTML = personality
-    document.getElementById("currentPercentages").innerHTML = eval(percentages[personality]["A"] + percentages[personality]["T"]).toFixed(1)
+    if(personality) {
+      statePaths.forEach((state) => {
+        let path = new THREE.ExtrudeGeometry(transformSVGPathExposed(state.path), options)
+        createMesh(path, state.name, personality)
+      })
+      document.getElementById("currentSearch").innerHTML = personality
+      document.getElementById("currentPercentages").innerHTML = eval(percentages[personality]["A"] + percentages[personality]["T"]).toFixed(1)
+    } else {
+      statePaths.forEach((state) => {
+        let path = new THREE.ExtrudeGeometry(transformSVGPathExposed(state.path), options)
+        createDefaultMesh(path, state.name)
+      })
+    }
   }
 
   if(personality) {
     renderStates(personality)
+    disabled = false
   } else {
-    renderStates("INFP")
+    renderStates()
+    disabled = true
+    var tween1 = new TWEEN.Tween( scene.position ).to( { y: 300 }, 60000 );
+    var tween2 = new TWEEN.Tween( scene.position ).to( { y: 0 }, 60000 );
+    tween1.onComplete( function () {
+
+        tween2.start();
+    } );
+    tween2.onComplete( function () {
+
+        tween1.start();
+    } );
+    tween1.start();
   }
 
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -223,16 +233,18 @@ function render() {
   if(!zooming) {
     camera.lookAt(new THREE.Vector3(0, 0, 0));
     camera.position.set(0, 400, 0)
-    camera.rotation.y = mouse.x * 0.85
-    scene.position.x = -window.innerWidth/3 - mouse.x * 1000
-    scene.position.z = -window.innerHeight/2.25 + mouse.y * 250
+    if(!disabled) {
+      camera.rotation.y = mouse.x * 0.85
+      scene.position.x = -window.innerWidth/3 - mouse.x * 1000
+      scene.position.z = -window.innerHeight/2.25 + mouse.y * 250
+    }
   }
 
   // find intersections
   raycaster.setFromCamera( mouse, camera );
   var intersects = raycaster.intersectObjects( scene.children );
 
-  if ( intersects.length > 0 ) {
+  if ( intersects.length > 0  && !disabled) {
 
     //update mouseFollow
     let props = intersects[0].object.properties
@@ -248,6 +260,7 @@ function render() {
     //if state is clicked, display its properties
     if (mouseClicked === true) {
       toggleZoom(props)
+      console.log(mouse.originalx)
       mouseClicked = false
     }
     
@@ -261,7 +274,7 @@ function render() {
       };
       INTERSECTED = intersects[ 0 ].object;
       INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
-      INTERSECTED.material.emissive.set( 0xff0000 );
+      INTERSECTED.material.emissive.set( 0x020a7a );
       new TWEEN.Tween(INTERSECTED.scale).to({
         z: INTERSECTED.hover.expanded
       }, 150 )
@@ -280,12 +293,5 @@ function render() {
   }
 
   renderer.render( scene, camera );
-}
-
-//move later
-document.getElementById('myForm').addEventListener( 'submit', prevent, false );
-
-function prevent(e) {
-  e.preventDefault();
 }
 

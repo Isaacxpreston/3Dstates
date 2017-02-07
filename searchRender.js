@@ -1,7 +1,16 @@
+document.getElementById('myForm').addEventListener( 'submit', prevent, false );
+
+function prevent(e) {
+  e.preventDefault();
+}
+
 const reRender = (e) => {
-  history.pushState(null, null, document.getElementsByClassName("inputPersonality")[0].value.toUpperCase());
+  let personality = document.getElementsByClassName("inputPersonality")[0].value.toUpperCase()
+  if(types.indexOf(personality) !== -1) {
+    history.pushState(null, null, personality);
+    renderFromUrl()
+  }
   document.getElementsByClassName("inputPersonality")[0].value = ""
-  renderFromUrl()
 }
 
 const renderFromUrl = () => {
