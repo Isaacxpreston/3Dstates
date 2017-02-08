@@ -8,6 +8,7 @@ const toggleZoom = (props) => {
     }, 100 )
     .start();
     setTimeout(() => {
+      //reset classes
       zooming = false
       document.body.className = "normalBg"
       document.getElementById("display").className = "display-hidden"
@@ -15,9 +16,11 @@ const toggleZoom = (props) => {
       document.getElementById("turbulentBarLoader").className = "display-hidden-none"
     }, 100)
   } else {
-    
-    //body
+
+    //display
     document.body.className = "zoomBg"
+    document.getElementById("display").className = "display"
+
     //stats
     document.getElementById("name").innerHTML = props.name
     document.getElementById("assertive").innerHTML = props.assertive
@@ -39,7 +42,7 @@ const toggleZoom = (props) => {
     let posx = ((100 * (mouse.originalx/window.innerWidth)).toFixed())
     let posy = ((100 * (mouse.originaly/window.innerHeight)).toFixed())
 
-    document.getElementById("display").className = "display"
+    
 
     if(posy > 49) {
       document.getElementById("display").style.top = mouse.originaly - 200 + "px"
