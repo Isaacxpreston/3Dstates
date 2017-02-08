@@ -1,8 +1,36 @@
 			body {
-				background: #020a7a;
+				/*background: #020a7a;*/
 				color: white;
 				overflow: hidden;
 				font-family: 'Lato', sans-serif;
+			}
+
+			body.normalBg {
+				background-color: #020a7a;
+				animation: zoomBgOut linear 0.1s;
+			}
+
+			body.zoomBg {
+				background-color: #000058;
+				animation: zoomBgIn linear 0.5s;
+			}
+
+			@keyframes zoomBgIn {
+				from {
+					background-color: #020a7a;
+				}
+				to {
+					background-color: #000058;
+				}
+			}
+
+			@keyframes zoomBgOut {
+				from {
+					background-color: #000058;
+				}
+				to {
+					background-color: #020a7a;
+				}
 			}
 
 			a:link {
