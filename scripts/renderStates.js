@@ -1,10 +1,10 @@
-var container;
-var camera, scene, raycaster, renderer;
+let container;
+let camera, scene, raycaster, renderer;
 
-var mouse = new THREE.Vector2(), INTERSECTED;
-var radius = 100, theta = 0;
-var zooming = false;
-var disabled = false
+let mouse = new THREE.Vector2(), INTERSECTED;
+let radius = 100, theta = 0;
+let zooming = false;
+let disabled = false
 
 //mouse events
 let mouseClicked = false;
@@ -29,7 +29,7 @@ function init(personality) {
   container = document.createElement( 'div' );
   container.className = "container"
   function removeElementsByClass(className){
-      var elements = document.getElementsByClassName(className);
+      let elements = document.getElementsByClassName(className);
       while(elements.length > 0){
           elements[0].parentNode.removeChild(elements[0]);
       }
@@ -53,8 +53,8 @@ function init(personality) {
       let min = getMin(personality)
       let max = getMax(personality) - min
       let percent = (((percentOfState(name, personality) - min) / max) * 100).toFixed()
-      var meshMaterial = new THREE.MeshLambertMaterial( { color: "rgb("+ percent +"%," + percent + "%, " + percent + "%)" } )
-      var mesh = new THREE.Mesh(path, meshMaterial);
+      let meshMaterial = new THREE.MeshLambertMaterial( { color: "rgb("+ percent +"%," + percent + "%, " + percent + "%)" } )
+      let mesh = new THREE.Mesh(path, meshMaterial);
       mesh.scale.z = (percent / 5) + 0.001 	
       mesh.properties = {
         name,
@@ -70,8 +70,8 @@ function init(personality) {
   }
 
     const createDefaultMesh = (path, name) => {
-      var meshMaterial = new THREE.MeshLambertMaterial( { color: "rgb(100%, 100%, 100%)", transparent: true, opacity: 0.8 } )
-      var mesh = new THREE.Mesh(path, meshMaterial);
+      let meshMaterial = new THREE.MeshLambertMaterial( { color: "rgb(100%, 100%, 100%)", transparent: true, opacity: 0.8 } )
+      let mesh = new THREE.Mesh(path, meshMaterial);
       mesh.scale.z = 10
       mesh.properties = {
         name: "",
@@ -115,8 +115,8 @@ function init(personality) {
   } else {
     renderStates()
     disabled = true
-    var tween1 = new TWEEN.Tween( scene.position ).to( { y: 300 }, 60000 );
-    var tween2 = new TWEEN.Tween( scene.position ).to( { y: 0 }, 60000 );
+    let tween1 = new TWEEN.Tween( scene.position ).to( { y: 300 }, 60000 );
+    let tween2 = new TWEEN.Tween( scene.position ).to( { y: 0 }, 60000 );
     tween1.onComplete( function () {
 
         tween2.start();
@@ -242,7 +242,7 @@ function render() {
 
   // find intersections
   raycaster.setFromCamera( mouse, camera );
-  var intersects = raycaster.intersectObjects( scene.children );
+  let intersects = raycaster.intersectObjects( scene.children );
 
   if ( intersects.length > 0  && !disabled) {
 
@@ -260,7 +260,6 @@ function render() {
     //if state is clicked, display its properties
     if (mouseClicked === true) {
       toggleZoom(props)
-      console.log(mouse.originalx)
       mouseClicked = false
     }
     
@@ -294,4 +293,3 @@ function render() {
 
   renderer.render( scene, camera );
 }
-
