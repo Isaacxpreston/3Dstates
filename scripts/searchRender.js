@@ -24,12 +24,12 @@ const initRender = () => {
 }
 
 const renderFromUrl = () => {
-  //for development
-  let url = window.location.href.slice(22).toUpperCase()
+  // //for development
+  // let url = window.location.href.slice(22).toUpperCase()
 
   //for production
   // https://personality-data.herokuapp.com/
-  //let url = window.location.href.slice(39).toUpperCase()
+  let url = window.location.href.slice(39).toUpperCase()
   
   if(types.indexOf(url) !== -1) {
     init(url)

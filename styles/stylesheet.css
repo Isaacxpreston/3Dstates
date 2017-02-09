@@ -249,31 +249,31 @@
 				z-index: 400
 			}
 
-.text-copy--stroke {
-  fill: transparent;
-  stroke: white;
-  stroke-width: 0.2;
-  animation: fadeIn 1s ease
-}
+			.text-copy--stroke {
+				fill: transparent;
+				stroke: white;
+				stroke-width: 0.2;
+				animation: fadeIn 1s ease
+			}
 
-@keyframes fadeIn {
-  from {
-    opacity: 0
-  }
-}
+			.r-fill {
+				fill: white;
+				transform-origin: 300px 150px;
+				animation: slide 2s ease;
+			}
 
-.r-fill {
-  fill: white;
-  transform-origin: 300px 150px;
-  animation: slide 2s ease;
-}
+			@keyframes fadeIn {
+				from {
+					opacity: 0
+				}
+			}
 
-@keyframes slide {
-  from {
-  	opacity: 0.75;
-    transform: translate(-100%)
-  }
-  to {
-    transform: none
-  }
-}
+			@keyframes slide {
+				from {
+					opacity: 0.75;
+					transform: translate(-100%)
+				}
+				to {
+					transform: none
+				}
+			}
