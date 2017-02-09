@@ -9,7 +9,44 @@
 		<div id="landingBg" class="landing-bg">
 		</div>
 		<div id="landingContent" class="landing-content">
-			<span class="landing-header"> 16 Personality Data Map </span>
+			<!--<span class="landing-header"> 16 Personality Data Map </span>-->
+
+			<svg viewBox="0 0 200 20">
+				<!-- Symbol with text -->
+				<symbol id="s-text">
+					<text text-anchor="middle"
+								x="50%"
+								y="50%"
+								dy=".35em"
+								class="text--line"
+								>
+						16 Personality Data Map
+					</text>    
+				</symbol>
+
+				<!-- Clippath  with text -->
+				<clippath id="cp-text">
+					<text text-anchor="middle"
+								x="50%"
+								y="50%"
+								dy=".35em"
+								class="text--line"
+								>
+						16 Personality Data Map
+					</text>
+				</clippath>
+				
+				<!-- Group with clippath and with patterned content -->
+				<g clip-path="url(#cp-text)">
+					<rect width="100%" height="100%" class="r-fill"/>
+				</g>
+
+				<!-- Copy of text for stroke -->
+				<use xlink:href="#s-text"
+						class="text-copy--stroke"></use>
+			</svg>
+
+
 			<br /><br />
 			<form id="myForm2" onSubmit="initRender()">
 				<input class="inputPersonality2" type='text'></input>
