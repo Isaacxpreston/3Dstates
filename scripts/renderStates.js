@@ -4,6 +4,7 @@ let mouse = new THREE.Vector2(), INTERSECTED;
 let zooming = false;
 let disabled = false
 let mouseClicked = false;
+let landingTween1, landingTween2;
 
 const onDocumentMouseDown = (e) => {
   mouseClicked = true
@@ -52,9 +53,7 @@ function init(personality) {
         let path = new THREE.ExtrudeGeometry(transformSVGPathExposed(state.path), options)
         createMesh(path, state.name, personality, scene)
       })
-      //display current search
-      document.getElementById("currentSearch").innerHTML = personality
-      document.getElementById("currentPercentages").innerHTML = eval(percentages[personality]["A"] + percentages[personality]["T"]).toFixed(1)
+      setNavbar(personality)
     } else {
       //render landing meshes
       statePaths.forEach((state) => {
@@ -72,15 +71,15 @@ function init(personality) {
     //landing
     renderStates()
     disabled = true
-    let tween1 = new TWEEN.Tween( scene.position ).to( { y: 300 }, 60000 );
-    let tween2 = new TWEEN.Tween( scene.position ).to( { y: 0 }, 60000 );
-    tween1.onComplete( function () {
-        tween2.start();
+    landingTween1 = new TWEEN.Tween( scene.position ).to( { y: 300 }, 60000 );
+    landingTween2 = new TWEEN.Tween( scene.position ).to( { y: 0 }, 60000 );
+    landingTween1.onComplete( function () {
+        landingTween2.start();
     } );
-    tween2.onComplete( function () {
-        tween1.start();
+    landingTween2.onComplete( function () {
+        landingTween1.start();
     } );
-    tween1.start();
+    landingTween1.start();
   }
 
   raycaster = new THREE.Raycaster();
