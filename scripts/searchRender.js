@@ -35,7 +35,7 @@ const renderFromUrl = () => {
   // let url = window.location.href.slice(22).toUpperCase()
 
   //for production
-  https://personality-data.herokuapp.com/
+  // https://personality-data.herokuapp.com/
   let url = window.location.href.slice(39).toUpperCase()
   
   if(types.indexOf(url) !== -1) {
