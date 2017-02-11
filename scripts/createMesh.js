@@ -7,7 +7,7 @@ const createMesh = (path, name, personality, scene) => {
       color: "rgb("+ percent +"%," + percent + "%, " + percent + "%)"
     })
     let mesh = new THREE.Mesh(path, meshMaterial);
-    mesh.scale.z = (percent / 5) + 0.001 	
+    mesh.scale.z = (percent / 3) + 0.001 	
     mesh.properties = {
       name,
       personality,
@@ -15,8 +15,8 @@ const createMesh = (path, name, personality, scene) => {
       turbulent: states[name][personality]['T']
     }
     mesh.hover = {
-      original: (percent / 5) + 0.001,
-      expanded: (percent / 5) + 25.001
+      original: (percent / 4) + 0.001,
+      expanded: (percent / 4) + 25.001
     }
     scene.add(mesh)
 }

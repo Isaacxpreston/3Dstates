@@ -368,7 +368,7 @@ function d3threeD(exports) {
             case 'fill':
                 if (typeof(value) !== 'string')
                     value = value.toString();
-                this.material.color.setHex(parseInt(value.substring(1), 16));
+                this.material.color.setColor(parseInt(value.substring(1), 16));
                 break;
 
             case 'transform':
