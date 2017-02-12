@@ -31,6 +31,7 @@ const resetStates = (personality) => {
         original: ((percent*100).toFixed() / 3) + 0.001,
         expanded: ((percent*100).toFixed() / 3) + 25.001
       }
+      mesh.material.wireframe = true
     }
   })
   setNavbar(personality)

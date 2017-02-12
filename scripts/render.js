@@ -32,8 +32,12 @@ const render = () => {
     document.getElementById("mouseFollow").style.color = "rgb(" + mouseFollowHex.r + "," + mouseFollowHex.g + "," + mouseFollowHex.b + ")"
     
     //if state is clicked, display its properties
-    if (mouseClicked === true) {
+    if (mouseClicked) {
+      if(!zooming) {
+        intersects[0].object.material.wireframe = false
+      }
       toggleZoom(props)
+
       mouseClicked = false
     }
     

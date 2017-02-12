@@ -47,7 +47,6 @@ const toggleZoom = (props) => {
     let posy = ((100 * (mouse.originaly/window.innerHeight)).toFixed())
 
     
-
     if(posy > 49) {
       document.getElementById("wrapper").style.top = mouse.originaly - 200 + "px"
     } else {
