@@ -1,5 +1,6 @@
 //create normal
 const createMesh = (path, name, personality, scene) => {
+  console.log("create called")
     let min = getMin(personality)
     let max = getMax(personality) - min
     let percent = (((percentOfState(name, personality) - min) / max) * 100).toFixed()
@@ -26,6 +27,7 @@ const createMesh = (path, name, personality, scene) => {
 
 //create landing
 const createDefaultMesh = (path, name, scene) => {
+  console.log("called")
     let meshMaterial = new THREE.MeshLambertMaterial({
       // color: "rgb(100%, 100%, 100%)",
       transparent: true,

@@ -28,6 +28,8 @@ const initRender = () => {
   disabled = false
   landingTween1.stop()
   landingTween2.stop()
+  scene.position.y = 0
+  document.body.className = "normalBg"
 }
 
 //runs init if personality is in url
@@ -40,7 +42,12 @@ const renderFromUrl = () => {
   // let url = window.location.href.slice(39).toUpperCase()
   
   if(types.indexOf(url) !== -1) {
-    init(url)
+    resetStates(url)
+    disabled = false
+    landingTween1.stop()
+    landingTween2.stop()
+    scene.position.y = 0
+    document.body.className = "normalBg"
     document.getElementById("landingContent").className = "display-hidden-none"
     document.getElementById("searchBarLanding").className = "display-hidden-none"
   }

@@ -5,9 +5,13 @@
 				text-transform: uppercase;
 			}
 
+			body.landingBg {
+				background-color: lightgrey
+			}
+
 			body.normalBg {
 				background-color: black;
-				animation: zoomBgOut linear 0.1s;
+				animation: zoomBgOut linear 0.25s;
 			}
 
 			body.zoomBg {

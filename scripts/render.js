@@ -35,6 +35,7 @@ const render = () => {
     if (mouseClicked) {
       if(!zooming) {
         intersects[0].object.material.wireframe = false
+        // intersects[0].object.material.opacity += 0.25
       }
       toggleZoom(props)
 
