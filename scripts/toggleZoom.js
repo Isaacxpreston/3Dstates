@@ -11,7 +11,7 @@ const toggleZoom = (props) => {
       //reset classes
       zooming = false
       document.body.className = "normalBg"
-      document.getElementById("display").className = "display-hidden"
+      document.getElementById("wrapper").className = "wrapper-hidden"
       document.getElementById("assertiveBarLoader").className = "display-hidden-none"
       document.getElementById("turbulentBarLoader").className = "display-hidden-none"
     }, 100)
@@ -19,16 +19,16 @@ const toggleZoom = (props) => {
 
     //display
     document.body.className = "zoomBg"
-    document.getElementById("display").className = "display"
+    document.getElementById("wrapper").className = "wrapper"
 
     //stats
     document.getElementById("name").innerHTML = props.name
     document.getElementById("assertive").innerHTML = props.assertive
     document.getElementById("turbulent").innerHTML = props.turbulent 
     document.getElementById("total").innerHTML = eval(props.assertive + props.turbulent).toFixed(2)
-    //loader bars
-    document.getElementById("assertiveBarLoader").className = "assertive-bar"
-    document.getElementById("turbulentBarLoader").className = "turbulent-bar"
+    //loader bars 
+    document.getElementById("assertiveBarLoader").className = "percent-loader"
+    document.getElementById("turbulentBarLoader").className = "percent-loader"
     document.getElementById("assertiveBar").style.width = props.assertive * 7.5 + "%" // (100/getMax(props.personality))
     document.getElementById("turbulentBar").style.width = props.turbulent * 7.5 + "%"
 
@@ -45,18 +45,18 @@ const toggleZoom = (props) => {
     
 
     if(posy > 49) {
-      document.getElementById("display").style.top = mouse.originaly - 200 + "px"
+      document.getElementById("wrapper").style.top = mouse.originaly - 200 + "px"
     } else {
-      document.getElementById("display").style.top = mouse.originaly + "px"
+      document.getElementById("wrapper").style.top = mouse.originaly + "px"
     }
     if(posx > 49) {
       if(posx > 64) {
-        document.getElementById("display").style.left = mouse.originalx + "px"
+        document.getElementById("wrapper").style.left = mouse.originalx + "px"
       } else {
-        document.getElementById("display").style.left = mouse.originalx + 100 + "px"
+        document.getElementById("wrapper").style.left = mouse.originalx + 100 + "px"
       }
     } else {
-      document.getElementById("display").style.left = mouse.originalx - 250 + "px"
+      document.getElementById("wrapper").style.left = mouse.originalx - 250 + "px"
     }
     
   }

@@ -55,24 +55,26 @@
 
 
 
-		<div id="display" class="display-hidden-none">
-			<h1>
-				<span id="name"></span> : 
-				<span id="total"></span>%
-			</h1>
-			<div>
-				Assertive: <span id="assertive"></span>%
-			</div>
-			<div id="assertiveBar">
-				<div id="assertiveBarLoader" class="display-hidden-none"></div>
-			</div>
-			<div>
-				Turbulent: <span id="turbulent"></span>%
-			</div>
-			<div id="turbulentBar">
-				<div id="turbulentBarLoader" class="display-hidden-none"></div>
-			</div>
-		</div>
+    <div id="wrapper" class="display-hidden-none">
+      <div class="popup-header">
+        <span id="name"></span> : <span id="total"></span>
+        <svg onClick="" class="close-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+        </svg>
+      </div>
+      <div id="second" class="popup-content">
+        <p>Turbulent: <span id="turbulent"></span></p>
+        <div id="turbulentBar" class="percent-bar">
+          <div id="turbulentBarLoader" class="percent-loader"></div>
+        </div>
+      </div>
+      <div id="first" class="popup-content">
+        <p>Assertive: <span id="assertive"></span></p>
+        <div id="assertiveBar" class="percent-bar">
+          <div id="assertiveBarLoader" class="percent-loader"></div>
+        </div>
+      </div>
+    </div>
 
 
 
@@ -81,7 +83,7 @@
 			<span id="currentSearch"></span> |  
 			<span id="currentPercentages"></span>% of population
 			<span class="float-right">
-				New Search |  
+				New Search 
 			</span>
 			<form id="myForm" onSubmit="reRender()">
 				<input class="inputPersonality" type='text'></input>

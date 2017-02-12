@@ -327,3 +327,158 @@
           transform: none
         }
       }
+
+      @keyframes show-popup-wrapper {
+        0% {
+          opacity: 0;
+          transform: scale(0.1)
+        }
+        10% {
+          opacity: 1;
+          transform: scale(0.5)
+        }
+        100% {
+          transform: scale(1)
+        }
+      }
+
+      @keyframes hide-popup-wrapper {
+        0% {
+          opacity: 1;
+          transform: none;
+        }
+        100% {
+          opacity: 0;
+          transform: scale(0.001)
+        }
+      }
+
+      @keyframes slide-popup-down {
+        0% {
+          transform: translateY(-150px)
+        }
+        1% {
+          opacity: 1
+        }
+        100% {
+          opacity: 1;
+          transform: none
+        }
+      }
+
+      @keyframes load-percent {
+        from {
+          width: 0%
+        }
+        to {
+          width: 100%
+        }
+      }
+
+      .percent-bar {
+        height: 50px;
+        background: #00695C;
+      }
+
+      .percent-loader {
+        height: 100%;
+        background: #80CBC4;
+        animation: load-percent 0.5s linear forwards;
+      }
+
+      #assertiveBarLoader {
+        animation-delay: 0.25s
+      }
+
+      #turbulentBarLoader {
+        animation-delay: 0.75s
+      }
+
+      .popup-content {
+        width: 380px;
+        height: 150px;
+        color: white;
+        background: #26A69A;
+        z-index: 1;
+        opacity: 0;
+        animation: slide-popup-down 0.5s linear forwards;
+        transform-origin: left top
+      }
+
+      .popup-content > p {
+        font-size: 1.5em
+      }
+
+      .popup-content:hover {
+        color: #00695C
+      }
+
+      .popup-content:hover .percent-bar > div {
+        background: #00695C;
+      }
+
+      .close-icon {
+        position: absolute;
+        top: 5;
+        right: 5px;
+        height: 32px;
+        width: 32px;
+        fill: #80CBC4;
+      }
+
+      .close-icon:hover {
+        fill: white;
+      }
+
+      #first {
+        position: absolute;
+        padding: 10px;
+        top: 80px;
+        animation-delay: 0.25s
+      }
+
+      #second {
+        position: absolute;
+        top: 230px;
+        padding: 10px;
+        animation-delay: 0.75s;
+      }
+
+      .popup-header {
+        width: 380px;
+        height: 80px;
+        font-size: 4em;
+        padding: 10px;
+        background: #00695C;
+        color: white;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        z-index: 2;
+      }
+
+      .wrapper {
+        height: 400px;
+        width: 400px;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        overflow: hidden; 
+        animation: show-popup-wrapper 0.25s linear;
+      }
+
+      .wrapper-hidden {
+        height: 400px;
+        width: 400px;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        overflow: hidden; 
+        animation: hide-popup-wrapper 0.25s linear forwards;
+      }
