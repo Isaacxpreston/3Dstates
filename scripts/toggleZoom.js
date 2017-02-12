@@ -45,23 +45,30 @@ const toggleZoom = (props) => {
     }, 250 )
     .start();
     zooming = true
+
+    //positioning pop up box
     let posx = ((100 * (mouse.originalx/window.innerWidth)).toFixed())
     let posy = ((100 * (mouse.originaly/window.innerHeight)).toFixed())
 
-    
-    if(posy > 49) {
-      document.getElementById("wrapper").style.top = mouse.originaly - 200 + "px"
-    } else {
-      document.getElementById("wrapper").style.top = mouse.originaly + "px"
-    }
+    // if(posy > 49) {
+    //   document.getElementById("wrapper").style.top = mouse.originaly - 200 + "px"
+    // } else {
+    //   document.getElementById("wrapper").style.top = mouse.originaly + "px"
+    // }
+    // if(posx > 49) {
+    //   if(posx > 64) {
+    //     document.getElementById("wrapper").style.left = mouse.originalx + "px"
+    //   } else {
+    //     document.getElementById("wrapper").style.left = mouse.originalx + 100 + "px"
+    //   }
+    // } else {
+    //   document.getElementById("wrapper").style.left = mouse.originalx - 250 + "px"
+    // }
+
     if(posx > 49) {
-      if(posx > 64) {
-        document.getElementById("wrapper").style.left = mouse.originalx + "px"
-      } else {
-        document.getElementById("wrapper").style.left = mouse.originalx + 100 + "px"
-      }
+      document.getElementById("wrapper").style.left = "60%"
     } else {
-      document.getElementById("wrapper").style.left = mouse.originalx - 250 + "px"
+      document.getElementById("wrapper").style.left = "10%"
     }
     
   }

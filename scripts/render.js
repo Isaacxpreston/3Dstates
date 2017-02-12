@@ -28,7 +28,6 @@ const render = () => {
       g: ((1 - objectColor.g) * 255).toFixed(),
       b: ((1 - objectColor.b) * 255).toFixed()
     }
-    console.log(mouseFollowHex)
     document.getElementById("mouseFollow").innerHTML = props.name 
     document.getElementById("mouseFollow").style.color = "rgb(" + mouseFollowHex.r + "," + mouseFollowHex.g + "," + mouseFollowHex.b + ")"
     

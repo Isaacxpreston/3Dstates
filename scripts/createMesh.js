@@ -27,7 +27,6 @@ const createMesh = (path, name, personality, scene) => {
 
 //create landing
 const createDefaultMesh = (path, name, scene) => {
-  console.log("called")
     let meshMaterial = new THREE.MeshLambertMaterial({
       // color: "rgb(100%, 100%, 100%)",
       transparent: true,

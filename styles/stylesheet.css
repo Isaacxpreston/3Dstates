@@ -127,6 +127,7 @@
 			.inputPersonality:focus {
     		outline: none;
 			}
+
 			/*.inputPersonality:hover {
 				border: 1px solid black;
 				background: white;
@@ -487,12 +488,8 @@
       .wrapper {
         height: 400px;
         width: 400px;
-        margin: auto;
         position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
+				top: 20%; 
         overflow: hidden; 
         animation: show-popup-wrapper 0.25s linear;
       }
@@ -500,12 +497,8 @@
       .wrapper-hidden {
         height: 400px;
         width: 400px;
-        margin: auto;
         position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
+				top: 20%;
         overflow: hidden; 
         animation: hide-popup-wrapper 0.25s linear forwards;
       }
