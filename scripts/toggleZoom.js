@@ -35,8 +35,8 @@ const toggleZoom = (props) => {
     document.getElementById("second").className = "popup-content"
     document.getElementById("assertiveBar").className = "percent-bar"
     document.getElementById("turbulentBar").className = "percent-bar"
-    document.getElementById("assertiveBar").style.width = props.assertive * 7.5 + "%" // (100/getMax(props.personality))
-    document.getElementById("turbulentBar").style.width = props.turbulent * 7.5 + "%"
+    document.getElementById("assertiveBar").style.width = props.assertive * 9 + "%" // (100/getMax(props.personality))
+    document.getElementById("turbulentBar").style.width = props.turbulent * 9 + "%"
 
     new TWEEN.Tween(scene.position).to({
       x: -window.innerWidth/3 - mouse.x * 1500, 
@@ -49,21 +49,6 @@ const toggleZoom = (props) => {
     //positioning pop up box
     let posx = ((100 * (mouse.originalx/window.innerWidth)).toFixed())
     let posy = ((100 * (mouse.originaly/window.innerHeight)).toFixed())
-
-    // if(posy > 49) {
-    //   document.getElementById("wrapper").style.top = mouse.originaly - 200 + "px"
-    // } else {
-    //   document.getElementById("wrapper").style.top = mouse.originaly + "px"
-    // }
-    // if(posx > 49) {
-    //   if(posx > 64) {
-    //     document.getElementById("wrapper").style.left = mouse.originalx + "px"
-    //   } else {
-    //     document.getElementById("wrapper").style.left = mouse.originalx + 100 + "px"
-    //   }
-    // } else {
-    //   document.getElementById("wrapper").style.left = mouse.originalx - 250 + "px"
-    // }
 
     if(posx > 49) {
       document.getElementById("wrapper").style.left = "60%"

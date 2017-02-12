@@ -359,14 +359,14 @@
           transform: scale(0.5)
         }
         100% {
-          transform: scale(1)
+          transform: scale(0.8)
         }
       }
 
       @keyframes hide-popup-wrapper {
         0% {
           opacity: 1;
-          transform: none;
+          transform: scale(0.8);
         }
         100% {
           opacity: 0;
@@ -404,7 +404,7 @@
       .percent-loader {
         height: 100%;
         background: #80CBC4;
-        animation: load-percent 0.5s linear forwards;
+        animation: load-percent 0.75s linear forwards;
       }
 
       #assertiveBarLoader {
@@ -412,7 +412,7 @@
       }
 
       #turbulentBarLoader {
-        animation-delay: 0.75s
+        animation-delay: 0.5s
       }
 
       .popup-content {
@@ -422,7 +422,7 @@
         background: #26A69A;
         z-index: 1;
         opacity: 0;
-        animation: slide-popup-down 0.5s linear forwards;
+        animation: slide-popup-down 0.25s linear forwards;
         transform-origin: left top
       }
 
@@ -469,7 +469,7 @@
         position: absolute;
         top: 230px;
         padding: 10px;
-        animation-delay: 0.75s;
+        animation-delay: 0.5s;
       }
 
       .popup-header {
@@ -491,7 +491,8 @@
         position: absolute;
 				top: 20%; 
         overflow: hidden; 
-        animation: show-popup-wrapper 0.25s linear;
+        animation: show-popup-wrapper 0.25s linear forwards;
+				z-index: 130;
       }
 
       .wrapper-hidden {
