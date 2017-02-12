@@ -16,7 +16,7 @@ const resetStates = (personality) => {
       // }
       // , 2000 )
       let opacityTween = new TWEEN.Tween(mesh.material).to({
-        opacity: percent
+        opacity: percent + 0.05
       }, 2000)
       scaleTween.start()
       // colorTween.start()

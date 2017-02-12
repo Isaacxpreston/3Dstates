@@ -114,13 +114,13 @@
 
 			.inputPersonality {
 				position: absolute;
-				top: 2.5px;
+				top: 5px;
 				right: 15px;
 				font-size: 24px;
-				background: #26A69A;
+				background: none;
 				border: 1px solid white;
 				user-select: none;
-				color: white;
+				color: #D95965;
 				z-index: 100;
 			}
 
@@ -226,7 +226,8 @@
 				left: 0;
 				width: 100%;
 				padding: 5px;
-				background: #26A69A;
+				background: rgba(0, 0, 0, 0.5);
+				border-bottom: 1px solid #D95965;
 				font-size: 25px;
 			}
 
@@ -235,11 +236,60 @@
 				top: 0;
 				left: 0;
 				width: 100%;
-				height: 25px;
+				height: 35px;
 				padding: 5px;
 				background: #26A69A;
 				font-size: 25px;
 				z-index: 400
+			}
+
+			.searchBar-zoom {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 35px;
+				padding: 5px;
+				background: #26A69A;
+				font-size: 25px;
+				z-index: 400;
+				animation: showSearchBar 0.25s linear forwards
+			}
+
+			@keyframes showSearchBar {
+				from {
+					opacity: 0;
+					display: none
+				}
+				to {
+					opcaity: 1;
+					display: block
+				}
+			}
+
+			.searchBar-hidden {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 35px;
+				padding: 5px;
+				background: #26A69A;
+				font-size: 25px;
+				animation: hideSearchBar 0.1s linear forwards;
+			}
+
+			@keyframes hideSearchBar {
+				from {
+					opacity : 1;
+					display: block;
+					z-index: 100
+				}
+				to {
+					opacity: 0;
+					display: hidden;
+					z-index: 1;
+				}
 			}
 
 			.text-copy--stroke {

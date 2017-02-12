@@ -16,12 +16,14 @@ const toggleZoom = (props) => {
       document.getElementById("second").className = "popup-content-none"
       document.getElementById("assertiveBar").className = "display-hidden-none"
       document.getElementById("turbulentBar").className = "display-hidden-none"
+      document.getElementById("searchBarLanding").className = "searchBar-hidden"
     }, 100)
   } else {
 
     //display
     document.body.className = "zoomBg"
     document.getElementById("wrapper").className = "wrapper"
+    document.getElementById("searchBarLanding").className = "searchBar-zoom"
 
     //stats
     document.getElementById("name").innerHTML = props.name

@@ -49,7 +49,7 @@ const renderFromUrl = () => {
     scene.position.y = 0
     document.body.className = "normalBg"
     document.getElementById("landingContent").className = "display-hidden-none"
-    document.getElementById("searchBarLanding").className = "display-hidden-none"
+    document.getElementById("searchBarLanding").className = "searchBar-hidden"
   }
 }
 
