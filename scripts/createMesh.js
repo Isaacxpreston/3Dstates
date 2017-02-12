@@ -4,7 +4,10 @@ const createMesh = (path, name, personality, scene) => {
     let max = getMax(personality) - min
     let percent = (((percentOfState(name, personality) - min) / max) * 100).toFixed()
     let meshMaterial = new THREE.MeshLambertMaterial({
-      color: "rgb("+ percent +"%," + percent + "%, " + percent + "%)"
+      opacity: percent/100,
+      color: "#26A69A",
+      wireframe: true
+      // color: "rgb("+ percent +"%," + percent + "%, " + percent + "%)"
     })
     let mesh = new THREE.Mesh(path, meshMaterial);
     mesh.scale.z = (percent / 3) + 0.001 	
@@ -15,8 +18,8 @@ const createMesh = (path, name, personality, scene) => {
       turbulent: states[name][personality]['T']
     }
     mesh.hover = {
-      original: (percent / 4) + 0.001,
-      expanded: (percent / 4) + 25.001
+      original: (percent / 3) + 0.001,
+      expanded: (percent / 3) + 25.001
     }
     scene.add(mesh)
 }
@@ -24,9 +27,11 @@ const createMesh = (path, name, personality, scene) => {
 //create landing
 const createDefaultMesh = (path, name, scene) => {
     let meshMaterial = new THREE.MeshLambertMaterial({
-      color: "rgb(100%, 100%, 100%)",
+      // color: "rgb(100%, 100%, 100%)",
       transparent: true,
-      opacity: 0.8
+      opacity: 0.8,
+      wireframe: true,
+      color: "#26A69A"
     })
     let mesh = new THREE.Mesh(path, meshMaterial);
     mesh.scale.z = 10

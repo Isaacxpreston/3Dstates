@@ -6,12 +6,12 @@
 			}
 
 			body.normalBg {
-				background-color: #020a7a;
+				background-color: black;
 				animation: zoomBgOut linear 0.1s;
 			}
 
 			body.zoomBg {
-				background-color: #000058;
+				background-color: lightgrey;
 				animation: zoomBgIn linear 0.5s;
 			}
 
@@ -26,20 +26,26 @@
       }
 
 			@keyframes zoomBgIn {
-				from {
-					background-color: #020a7a;
+				0% {
+					background-color: black;
 				}
-				to {
-					background-color: #000058;
+				50% {
+					background-color: white;
+				}
+				100% {
+					background-color: lightgrey;
 				}
 			}
 
 			@keyframes zoomBgOut {
-				from {
-					background-color: #000058;
+				0% {
+					background-color: lightgrey;
 				}
-				to {
-					background-color: #020a7a;
+				50% {
+					background-color: white;
+				}
+				100% {
+					background-color: black;
 				}
 			}
 
@@ -83,45 +89,6 @@
         animation-delay: 0.25s;
       }
 
-			.landing-bg {
-				position: absolute;
-				margin-left: auto;
-				margin-right: auto;
-				left: 0;
-				right: 0;
-				top: 15%;
-				background: #020a7a;
-				border: 1px solid white;
-				opacity: 0.5;
-				width: 800px;
-				height: 500px;
-				z-index: 300;
-				animation: hoverOpacityOut linear 2s
-			}
-
-			.landing-bg:hover {
-				opacity: 0.9;
-				animation: hoverOpacity linear 2s
-			}
-
-			@keyframes hoverOpacity {
-				from {
-					opacity: 0.5
-				}
-				to {
-					opacity: 0.9
-				}
-			}
-
-			@keyframes hoverOpacityOut {
-				from {
-					opacity: 0.9
-				}
-				to {
-					opacity: 0.5
-				}
-			}
-
 			#mouseFollow {
 				position: absolute;
 				z-index: 120;
@@ -146,7 +113,7 @@
 				top: 2.5px;
 				right: 15px;
 				font-size: 24px;
-				background: #020a7a;
+				background: #26A69A;
 				border: 1px solid white;
 				user-select: none;
 				color: white;
@@ -156,11 +123,11 @@
 			.inputPersonality:focus {
     		outline: none;
 			}
-			.inputPersonality:hover {
+			/*.inputPersonality:hover {
 				border: 1px solid black;
 				background: white;
 				color: black;
-			}
+			}*/
 
 			.inputPersonality2 {
 				height: 100px;
@@ -187,7 +154,7 @@
 				position: absolute;
 				z-index: 100;
 				opacity: 0;
-				background: #020a7a;
+				background: #26A69A;
 				padding: 10px;
 				transform: scale(2, 2);
 				animation: hideDispaly linear 0.2s
@@ -196,7 +163,7 @@
 			.display {
 				position: absolute;
 				z-index: 100;
-				background: #020a7a;
+				background: #26A69A;
 				padding: 10px;
 				border: 1px solid black;
 				opacity: 0.8;
@@ -255,8 +222,7 @@
 				left: 0;
 				width: 100%;
 				padding: 5px;
-				background: #020a7a;
-				border-bottom: 1px solid black;
+				background: #26A69A;
 				font-size: 25px;
 			}
 
@@ -267,7 +233,7 @@
 				width: 100%;
 				height: 25px;
 				padding: 5px;
-				background: #020a7a;
+				background: #26A69A;
 				font-size: 25px;
 				z-index: 400
 			}

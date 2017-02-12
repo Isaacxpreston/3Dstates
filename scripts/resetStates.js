@@ -7,19 +7,19 @@ const resetStates = (personality) => {
       let name = mesh.properties.name
       let percent = (((percentOfState(name, personality) - min) / max))
       let scaleTween = new TWEEN.Tween(mesh.scale).to({
-        z: ((percent*100).toFixed() / 4) + 0.001 	
+        z: ((percent*100).toFixed() / 3) + 0.001 	
       }, 500 )
-      let colorTween = new TWEEN.Tween(mesh.material.color).to({
-        r: percent,
-        g: percent,
-        b: percent,
-      }
-      , 2000 )
+      // let colorTween = new TWEEN.Tween(mesh.material.color).to({
+      //   r: percent,
+      //   g: percent,
+      //   b: percent,
+      // }
+      // , 2000 )
       let opacityTween = new TWEEN.Tween(mesh.material).to({
-        opacity: 1
+        opacity: percent
       }, 2000)
       scaleTween.start()
-      colorTween.start()
+      // colorTween.start()
       opacityTween.start()
       mesh.properties = {
         name,
@@ -28,8 +28,8 @@ const resetStates = (personality) => {
         turbulent: states[name][personality]['T']
       }
       mesh.hover = {
-        original: ((percent*100).toFixed() / 4) + 0.001,
-        expanded: ((percent*100).toFixed() / 4) + 25.001
+        original: ((percent*100).toFixed() / 3) + 0.001,
+        expanded: ((percent*100).toFixed() / 3) + 25.001
       }
     }
   })
