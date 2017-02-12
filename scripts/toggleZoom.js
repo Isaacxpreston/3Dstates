@@ -12,8 +12,10 @@ const toggleZoom = (props) => {
       zooming = false
       document.body.className = "normalBg"
       document.getElementById("wrapper").className = "wrapper-hidden"
-      document.getElementById("assertiveBarLoader").className = "display-hidden-none"
-      document.getElementById("turbulentBarLoader").className = "display-hidden-none"
+      document.getElementById("first").className = "popup-content-none"
+      document.getElementById("second").className = "popup-content-none"
+      document.getElementById("assertiveBar").className = "display-hidden-none"
+      document.getElementById("turbulentBar").className = "display-hidden-none"
     }, 100)
   } else {
 
@@ -27,8 +29,10 @@ const toggleZoom = (props) => {
     document.getElementById("turbulent").innerHTML = props.turbulent 
     document.getElementById("total").innerHTML = eval(props.assertive + props.turbulent).toFixed(2)
     //loader bars 
-    document.getElementById("assertiveBarLoader").className = "percent-loader"
-    document.getElementById("turbulentBarLoader").className = "percent-loader"
+    document.getElementById("first").className = "popup-content"
+    document.getElementById("second").className = "popup-content"
+    document.getElementById("assertiveBar").className = "percent-bar"
+    document.getElementById("turbulentBar").className = "percent-bar"
     document.getElementById("assertiveBar").style.width = props.assertive * 7.5 + "%" // (100/getMax(props.personality))
     document.getElementById("turbulentBar").style.width = props.turbulent * 7.5 + "%"
 

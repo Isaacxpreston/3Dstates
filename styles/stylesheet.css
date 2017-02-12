@@ -405,6 +405,13 @@
         transform-origin: left top
       }
 
+			.popup-content-none {
+        width: 380px;
+        height: 150px;
+        color: white;
+        background: #26A69A;
+			}
+
       .popup-content > p {
         font-size: 1.5em
       }
